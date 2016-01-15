@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JediTournamentConsole", "JediTournamentConsole\JediTournamentConsole.csproj", "{FEC4BB5A-AC42-46E6-B72B-62C707A5919F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLayer", "BusinessLayer\BusinessLayer.csproj", "{4DAFE441-1175-42B7-AFBD-AE390DF85904}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StubDataAccessLayer", "StubDataAccessLayer\StubDataAccessLayer.csproj", "{AC3E527C-3A41-4180-B918-A565DEE31B90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntitiesLayer", "EntitiesLayer\EntitiesLayer.csproj", "{79B2961B-F475-4F8B-8273-A23B96EFA2F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JediTournamentWPF", "..\JediTournamentWPF\JediTournamentWPF\JediTournamentWPF.csproj", "{2C22DC6F-B57C-41E7-BED8-640EB94BC9D8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FEC4BB5A-AC42-46E6-B72B-62C707A5919F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEC4BB5A-AC42-46E6-B72B-62C707A5919F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEC4BB5A-AC42-46E6-B72B-62C707A5919F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEC4BB5A-AC42-46E6-B72B-62C707A5919F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DAFE441-1175-42B7-AFBD-AE390DF85904}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DAFE441-1175-42B7-AFBD-AE390DF85904}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DAFE441-1175-42B7-AFBD-AE390DF85904}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DAFE441-1175-42B7-AFBD-AE390DF85904}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC3E527C-3A41-4180-B918-A565DEE31B90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC3E527C-3A41-4180-B918-A565DEE31B90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC3E527C-3A41-4180-B918-A565DEE31B90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC3E527C-3A41-4180-B918-A565DEE31B90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79B2961B-F475-4F8B-8273-A23B96EFA2F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79B2961B-F475-4F8B-8273-A23B96EFA2F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79B2961B-F475-4F8B-8273-A23B96EFA2F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79B2961B-F475-4F8B-8273-A23B96EFA2F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C22DC6F-B57C-41E7-BED8-640EB94BC9D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C22DC6F-B57C-41E7-BED8-640EB94BC9D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C22DC6F-B57C-41E7-BED8-640EB94BC9D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C22DC6F-B57C-41E7-BED8-640EB94BC9D8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

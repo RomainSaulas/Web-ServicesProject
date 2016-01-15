@@ -1,0 +1,12 @@
+c:\users\sidujardin\documents\visual studio 2013\Projects\JediTournamentConsole\EntitiesLayer\bin\Debug\EntitiesLayer.dll
+c:\users\sidujardin\documents\visual studio 2013\Projects\JediTournamentConsole\EntitiesLayer\bin\Debug\EntitiesLayer.pdb
+c:\users\sidujardin\documents\visual studio 2013\Projects\JediTournamentConsole\EntitiesLayer\obj\Debug\EntitiesLayer.dll
+c:\users\sidujardin\documents\visual studio 2013\Projects\JediTournamentConsole\EntitiesLayer\obj\Debug\EntitiesLayer.pdb
+C:\Users\Simon\Documents\Visual Studio 2015\Projects\Projects\JediTournamentConsole\EntitiesLayer\bin\Debug\EntitiesLayer.dll
+C:\Users\Simon\Documents\Visual Studio 2015\Projects\Projects\JediTournamentConsole\EntitiesLayer\bin\Debug\EntitiesLayer.pdb
+C:\Users\Simon\Documents\Visual Studio 2015\Projects\Projects\JediTournamentConsole\EntitiesLayer\obj\Debug\EntitiesLayer.dll
+C:\Users\Simon\Documents\Visual Studio 2015\Projects\Projects\JediTournamentConsole\EntitiesLayer\obj\Debug\EntitiesLayer.pdb
+C:\Users\sidujardin\Documents\Visual Studio 2012\JediTournamentConsole\EntitiesLayer\bin\Debug\EntitiesLayer.dll
+C:\Users\sidujardin\Documents\Visual Studio 2012\JediTournamentConsole\EntitiesLayer\bin\Debug\EntitiesLayer.pdb
+C:\Users\sidujardin\Documents\Visual Studio 2012\JediTournamentConsole\EntitiesLayer\obj\Debug\EntitiesLayer.dll
+C:\Users\sidujardin\Documents\Visual Studio 2012\JediTournamentConsole\EntitiesLayer\obj\Debug\EntitiesLayer.pdb
