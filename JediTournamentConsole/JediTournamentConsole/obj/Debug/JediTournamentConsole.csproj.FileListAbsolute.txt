@@ -34,3 +34,15 @@ C:\Users\sidujardin\Documents\Visual Studio 2012\JediTournamentConsole\JediTourn
 C:\Users\sidujardin\Documents\Visual Studio 2012\JediTournamentConsole\JediTournamentConsole\obj\Debug\JediTournamentConsole.csprojResolveAssemblyReference.cache
 C:\Users\sidujardin\Documents\Visual Studio 2012\JediTournamentConsole\JediTournamentConsole\obj\Debug\JediTournamentConsole.exe
 C:\Users\sidujardin\Documents\Visual Studio 2012\JediTournamentConsole\JediTournamentConsole\obj\Debug\JediTournamentConsole.pdb
+H:\Documents\webService\JediTournamentConsole\JediTournamentConsole\bin\Debug\JediTournamentConsole.exe.config
+H:\Documents\webService\JediTournamentConsole\JediTournamentConsole\obj\Debug\JediTournamentConsole.exe
+H:\Documents\webService\JediTournamentConsole\JediTournamentConsole\obj\Debug\JediTournamentConsole.pdb
+H:\Documents\webService\JediTournamentConsole\JediTournamentConsole\bin\Debug\JediTournamentConsole.exe
+H:\Documents\webService\JediTournamentConsole\JediTournamentConsole\bin\Debug\JediTournamentConsole.pdb
+H:\Documents\webService\JediTournamentConsole\JediTournamentConsole\bin\Debug\BusinessLayer.dll
+H:\Documents\webService\JediTournamentConsole\JediTournamentConsole\bin\Debug\EntitiesLayer.dll
+H:\Documents\webService\JediTournamentConsole\JediTournamentConsole\bin\Debug\StubDataAccessLayer.dll
+H:\Documents\webService\JediTournamentConsole\JediTournamentConsole\bin\Debug\BusinessLayer.pdb
+H:\Documents\webService\JediTournamentConsole\JediTournamentConsole\bin\Debug\EntitiesLayer.pdb
+H:\Documents\webService\JediTournamentConsole\JediTournamentConsole\bin\Debug\StubDataAccessLayer.pdb
+H:\Documents\webService\JediTournamentConsole\JediTournamentConsole\obj\Debug\JediTournamentConsole.csprojResolveAssemblyReference.cache

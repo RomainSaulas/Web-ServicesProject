@@ -5,14 +5,16 @@
     <Grid>
         <Grid HorizontalAlignment="Left" Height="63" VerticalAlignment="Top" Width="600" Background="#2980b9" Margin="0,0,0,0"/>
         <Label Content="Jedi Tournament 2016" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="63" VerticalAlignment="Top" Width="600" Foreground="White" FontSize="30" />
-        <Grid HorizontalAlignment="Left" Height="63" Margin="0,63,0,0" VerticalAlignment="Top" Width="600" Background="#95a5a6">
+        <Grid HorizontalAlignment="Left" Height="75" Margin="0,63,0,0" VerticalAlignment="Top" Width="600" Background="#95a5a6">
             <Button Content="Jedis" HorizontalAlignment="Left" Height="41" Margin="10,10,0,0" VerticalAlignment="Top" Width="100" Click="btnJedis_Click"/>
-            <Button Content="Stades" HorizontalAlignment="Left" Height="41" Margin="130,10,0,0" VerticalAlignment="Top" Width="100" Click="btnStades_Click"/>
-            <Button Content="Matchs" HorizontalAlignment="Left" Height="41" Margin="250,10,0,0" VerticalAlignment="Top" Width="100" Click="btnMatchs_Click"/>
-            <Button Content="Caractéristiques" HorizontalAlignment="Left" Height="41" Margin="370,10,0,0" VerticalAlignment="Top" Width="100" Click="btnCaracteristiques_Click"/>
-            <Button Content="Bonus" HorizontalAlignment="Left" Height="41" Margin="490,10,0,0" VerticalAlignment="Top" Width="100" Click="btnBonus_Click"/>
+            <Button Content="Export Jedis" HorizontalAlignment="Left" Height="19" Margin="10,51,0,0" VerticalAlignment="Top" Width="100" Click="btnExportJedis_Click"/>
+            <Button Content="Stades" HorizontalAlignment="Left" Height="55" Margin="130,10,0,0" VerticalAlignment="Top" Width="100" Click="btnStades_Click"/>
+            <Button Content="Matchs" HorizontalAlignment="Left" Height="55" Margin="250,10,0,0" VerticalAlignment="Top" Width="100" Click="btnMatchs_Click"/>
+            <Button Content="Caractéristiques" HorizontalAlignment="Left" Height="55" Margin="370,10,0,0" VerticalAlignment="Top" Width="100" Click="btnCaracteristiques_Click"/>
+            <Button Content="Bonus" HorizontalAlignment="Left" Height="55" Margin="490,10,0,0" VerticalAlignment="Top" Width="100" Click="btnBonus_Click"/>
+            
         </Grid>
-        <TextBox x:Name="tBox" HorizontalAlignment="Left" Height="264" Margin="10,136,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="580"/>
+        <TextBox x:Name="tBox" HorizontalAlignment="Left" Height="257" Margin="10,143,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="580"/>
 
     </Grid>
 </Window>

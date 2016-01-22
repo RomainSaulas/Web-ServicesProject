@@ -19,3 +19,10 @@ C:\Users\sidujardin\Documents\Visual Studio 2012\JediTournamentConsole\StubDataA
 C:\Users\sidujardin\Documents\Visual Studio 2012\JediTournamentConsole\StubDataAccessLayer\obj\Debug\StubDataAccessLayer.csprojResolveAssemblyReference.cache
 C:\Users\sidujardin\Documents\Visual Studio 2012\JediTournamentConsole\StubDataAccessLayer\obj\Debug\StubDataAccessLayer.dll
 C:\Users\sidujardin\Documents\Visual Studio 2012\JediTournamentConsole\StubDataAccessLayer\obj\Debug\StubDataAccessLayer.pdb
+H:\Documents\webService\JediTournamentConsole\StubDataAccessLayer\bin\Debug\StubDataAccessLayer.dll
+H:\Documents\webService\JediTournamentConsole\StubDataAccessLayer\bin\Debug\StubDataAccessLayer.pdb
+H:\Documents\webService\JediTournamentConsole\StubDataAccessLayer\bin\Debug\EntitiesLayer.dll
+H:\Documents\webService\JediTournamentConsole\StubDataAccessLayer\bin\Debug\EntitiesLayer.pdb
+H:\Documents\webService\JediTournamentConsole\StubDataAccessLayer\obj\Debug\StubDataAccessLayer.csprojResolveAssemblyReference.cache
+H:\Documents\webService\JediTournamentConsole\StubDataAccessLayer\obj\Debug\StubDataAccessLayer.dll
+H:\Documents\webService\JediTournamentConsole\StubDataAccessLayer\obj\Debug\StubDataAccessLayer.pdb

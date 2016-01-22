@@ -25,3 +25,12 @@ C:\Users\sidujardin\Documents\Visual Studio 2012\JediTournamentConsole\BusinessL
 C:\Users\sidujardin\Documents\Visual Studio 2012\JediTournamentConsole\BusinessLayer\obj\Debug\BusinessLayer.csprojResolveAssemblyReference.cache
 C:\Users\sidujardin\Documents\Visual Studio 2012\JediTournamentConsole\BusinessLayer\obj\Debug\BusinessLayer.dll
 C:\Users\sidujardin\Documents\Visual Studio 2012\JediTournamentConsole\BusinessLayer\obj\Debug\BusinessLayer.pdb
+H:\Documents\webService\JediTournamentConsole\BusinessLayer\bin\Debug\BusinessLayer.dll
+H:\Documents\webService\JediTournamentConsole\BusinessLayer\bin\Debug\BusinessLayer.pdb
+H:\Documents\webService\JediTournamentConsole\BusinessLayer\bin\Debug\EntitiesLayer.dll
+H:\Documents\webService\JediTournamentConsole\BusinessLayer\bin\Debug\StubDataAccessLayer.dll
+H:\Documents\webService\JediTournamentConsole\BusinessLayer\bin\Debug\EntitiesLayer.pdb
+H:\Documents\webService\JediTournamentConsole\BusinessLayer\bin\Debug\StubDataAccessLayer.pdb
+H:\Documents\webService\JediTournamentConsole\BusinessLayer\obj\Debug\BusinessLayer.csprojResolveAssemblyReference.cache
+H:\Documents\webService\JediTournamentConsole\BusinessLayer\obj\Debug\BusinessLayer.dll
+H:\Documents\webService\JediTournamentConsole\BusinessLayer\obj\Debug\BusinessLayer.pdb

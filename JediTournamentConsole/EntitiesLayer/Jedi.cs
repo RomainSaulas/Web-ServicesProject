@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace EntitiesLayer
 {
+    [Serializable]
     public class Jedi : EntityObject
     {
         private Caracteristiques[] caracteristiques;
