@@ -48,8 +48,8 @@ namespace BusinessLayer
             DalManager dal = new DalManager();
             listMatch = dal.GetMatch();
             stringMatchDuSiecle = from match in listMatch
-                                  where match.Stad.NbPlaces > 3 && match.Jedi1.IsSith == true && match.Jedi2.IsSith == true
-                             select match.Stad.Planete;
+                                  where match.Stade.NbPlaces > 3 && match.Jedi1.IsSith == true && match.Jedi2.IsSith == true
+                             select match.Stade.Planete;
             return stringMatchDuSiecle;
         }
 
@@ -97,6 +97,65 @@ namespace BusinessLayer
             IEnumerable<string> stringCaracteristique;
             stringCaracteristique = from carac in listCaracteristique select carac.Nom;
             return stringCaracteristique;
+        }
+
+        public List<Jedi> ListJediInfo()
+        {
+            DalManager dal = new DalManager();
+
+            return dal.GetJedi();
+        }
+        public List<Stade> ListStadeInfo()
+        {
+            DalManager dal = new DalManager();
+
+            return dal.GetStade();
+        }
+
+        public List<Match> ListMatchInfo()
+        {
+            DalManager dal = new DalManager();
+
+            return dal.GetMatch();
+        }
+
+        public List<ViewModelJedi> getAllJediModel()
+        {
+            List<ViewModelJedi> list = new List<ViewModelJedi>();
+            var manager = new BusinessLayer.JediTournamentManager();
+            var jedis = manager.ListJediInfo();
+            foreach (Jedi jeds in jedis)
+            {
+                list.Add(new ViewModelJedi(jeds));
+            }
+
+            return list;
+        }
+
+        public List<ViewModelStade> getAllStadeModel()
+        {
+            List<ViewModelStade> list = new List<ViewModelStade>();
+            var manager = new BusinessLayer.JediTournamentManager();
+            var stades = manager.ListStadeInfo();
+            foreach (Stade stads in stades)
+            {
+                list.Add(new ViewModelStade(stads));
+            }
+
+            return list;
+        }
+
+        public List<ViewModelMatch> getAllMatchModel()
+        {
+            List<ViewModelMatch> list = new List<ViewModelMatch>();
+            var manager = new BusinessLayer.JediTournamentManager();
+            var matches = manager.ListMatchInfo();
+            foreach (Match matchs in matches)
+            {
+                list.Add(new ViewModelMatch(matchs));
+            }
+
+            return list;
         }
 
     }

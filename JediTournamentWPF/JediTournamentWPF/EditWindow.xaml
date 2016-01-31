@@ -1,0 +1,52 @@
+﻿<Window x:Class="JediTournamentWPF.EditWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="EditWindow" Height="419.71" Width="856.916">
+    <Grid Margin="0,0,0,-313">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="536*"/>
+            <ColumnDefinition Width="120*"/>
+            <ColumnDefinition Width="223*"/>
+        </Grid.ColumnDefinitions>
+        <ComboBox x:Name="ComboItems" HorizontalAlignment="Left" Margin="10,27,0,0" VerticalAlignment="Top" Width="179" Height="28" SelectionChanged="ComboItems_SelectionChanged"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="10,97,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="114,97,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="10,144,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="10,365,0,0" VerticalAlignment="Top" Width="75"/>
+        <ListView  Visibility="Collapsed" x:Name="ListItemsJedi" HorizontalAlignment="Left" Height="272" Margin="275,0,0,421" VerticalAlignment="Bottom" Width="564" Grid.ColumnSpan="3" SelectionChanged="ListView_SelectionChanged_1">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Nom}"/>
+                    <GridViewColumn Header="IsSith" DisplayMemberBinding="{Binding Sith}"/>
+                    <GridViewColumn Header="Health" DisplayMemberBinding="{Binding Health}"/>
+                    <GridViewColumn Header="Force" DisplayMemberBinding="{Binding Force}"/>
+                    <GridViewColumn Header="Defense" DisplayMemberBinding="{Binding Defense}"/>
+                    <GridViewColumn Header="Luck" DisplayMemberBinding="{Binding Chance}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <ListView  Visibility="Collapsed" x:Name="ListItemsStade" HorizontalAlignment="Left" Height="272" Margin="275,0,0,421" VerticalAlignment="Bottom" Width="564" Grid.ColumnSpan="3" SelectionChanged="ListView_SelectionChanged_1">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Planete" DisplayMemberBinding="{Binding Planete}"/>
+                    <GridViewColumn Header="Places" DisplayMemberBinding="{Binding NbPlaces}"/>
+                    <GridViewColumn Header="Health" DisplayMemberBinding="{Binding Health}"/>
+                    <GridViewColumn Header="Force" DisplayMemberBinding="{Binding Force}"/>
+                    <GridViewColumn Header="Defense" DisplayMemberBinding="{Binding Defense}"/>
+                    <GridViewColumn Header="Luck" DisplayMemberBinding="{Binding Luck}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <ListView  Visibility="Collapsed" x:Name="ListItemsMatch" HorizontalAlignment="Left" Height="272" Margin="275,0,0,421" VerticalAlignment="Bottom" Width="564" Grid.ColumnSpan="3" SelectionChanged="ListView_SelectionChanged_1">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Phase" DisplayMemberBinding="{Binding PhaseTournoi}"/>
+                    <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Jedi1.Nom}"/>
+                    <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Jedi2.Nom}"/>
+                    <GridViewColumn Header="Planete" DisplayMemberBinding="{Binding Planete}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+    </Grid>
+</Window>

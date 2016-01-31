@@ -9,6 +9,12 @@ namespace EntitiesLayer
     public class Stade : EntityObject
     {
         private Caracteristiques[] caracteristiques;
+
+        public Caracteristiques[] Caracteristiques
+        {
+            get { return caracteristiques; }
+            set { caracteristiques = value; }
+        }
         private int nbPlace;
         private string planete;
 
@@ -18,12 +24,19 @@ namespace EntitiesLayer
             {
                 return planete;
             }
+            set {
+                planete = value;
+            }
         }
         public int NbPlaces
         {
             get
             {
                 return nbPlace;
+            }
+             set
+            {
+                nbPlace = value;
             }
         }
         public Stade(Caracteristiques[] caracteristiques, int nb,string plan,int identifiant):base(identifiant)

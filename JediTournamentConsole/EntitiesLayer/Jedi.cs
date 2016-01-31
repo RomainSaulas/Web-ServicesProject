@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace EntitiesLayer
 {
-    [Serializable]
     public class Jedi : EntityObject
     {
         private Caracteristiques[] caracteristiques;
@@ -18,13 +17,21 @@ namespace EntitiesLayer
             get
             {
                 return caracteristiques;
-            }        
+            }
+            set
+            {
+                this.Carac = value;
+            }
         }
         public string Nom
         {
             get
             {
                 return nom;
+            }
+            set
+            {
+                this.nom = value;
             }
         }
 
@@ -34,12 +41,21 @@ namespace EntitiesLayer
             {
                 return isSith;
             }
+            set
+            {
+                this.isSith = value;
+            }
         }
         public Jedi(Caracteristiques[] caracteristiques,bool isSith,string nom,int id):base(id)
         {
             this.caracteristiques = caracteristiques;
             this.isSith = isSith;
             this.nom = nom;
+        }
+
+        public override string ToString()
+        {
+            return nom;
         }
     }
 }
