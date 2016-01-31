@@ -105,3 +105,6 @@ H:\Documents\ZZ2\ServiceWeb\Projet\JediTournamentWPF\JediTournamentWPF\bin\Debug
 H:\Documents\ZZ2\ServiceWeb\Projet\JediTournamentWPF\JediTournamentWPF\bin\Debug\BusinessLayer.pdb
 H:\Documents\ZZ2\ServiceWeb\Projet\JediTournamentWPF\JediTournamentWPF\bin\Debug\EntitiesLayer.pdb
 H:\Documents\ZZ2\ServiceWeb\Projet\JediTournamentWPF\JediTournamentWPF\bin\Debug\StubDataAccessLayer.pdb
+C:\Users\Romain\Documents\Work\Web-ServicesProject\JediTournamentWPF\JediTournamentWPF\bin\Debug\JediTournamentWPF.exe.config
+C:\Users\Romain\Documents\Work\Web-ServicesProject\JediTournamentWPF\JediTournamentWPF\obj\Debug\JediTournamentWPF.exe
+C:\Users\Romain\Documents\Work\Web-ServicesProject\JediTournamentWPF\JediTournamentWPF\obj\Debug\JediTournamentWPF.pdb
