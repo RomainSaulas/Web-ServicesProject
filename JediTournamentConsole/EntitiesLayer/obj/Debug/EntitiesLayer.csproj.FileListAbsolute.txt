@@ -20,3 +20,8 @@ H:\Documents\ZZ2\ServiceWeb\Projet\JediTournamentConsole\EntitiesLayer\bin\Debug
 H:\Documents\ZZ2\ServiceWeb\Projet\JediTournamentConsole\EntitiesLayer\obj\Debug\EntitiesLayer.csprojResolveAssemblyReference.cache
 H:\Documents\ZZ2\ServiceWeb\Projet\JediTournamentConsole\EntitiesLayer\obj\Debug\EntitiesLayer.dll
 H:\Documents\ZZ2\ServiceWeb\Projet\JediTournamentConsole\EntitiesLayer\obj\Debug\EntitiesLayer.pdb
+C:\Users\Romain\Documents\Work\Web-ServicesProject\JediTournamentConsole\EntitiesLayer\bin\Debug\EntitiesLayer.dll
+C:\Users\Romain\Documents\Work\Web-ServicesProject\JediTournamentConsole\EntitiesLayer\bin\Debug\EntitiesLayer.pdb
+C:\Users\Romain\Documents\Work\Web-ServicesProject\JediTournamentConsole\EntitiesLayer\obj\Debug\EntitiesLayer.csprojResolveAssemblyReference.cache
+C:\Users\Romain\Documents\Work\Web-ServicesProject\JediTournamentConsole\EntitiesLayer\obj\Debug\EntitiesLayer.dll
+C:\Users\Romain\Documents\Work\Web-ServicesProject\JediTournamentConsole\EntitiesLayer\obj\Debug\EntitiesLayer.pdb
