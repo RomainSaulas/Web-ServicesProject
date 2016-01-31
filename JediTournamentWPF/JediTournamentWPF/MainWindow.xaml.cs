@@ -14,7 +14,6 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using BusinessLayer;
 using EntitiesLayer;
-using System.Xml.Serialization;
 
 namespace JediTournamentWPF
 {
@@ -35,7 +34,7 @@ namespace JediTournamentWPF
         {
             stringInfo = manag.ListJedi();
             tBox.Text = "";
-            foreach (string s in stringInfo)
+            foreach (String s in stringInfo)
             {
                 tBox.Text += s+'\n';
             }
@@ -45,7 +44,7 @@ namespace JediTournamentWPF
         {
             stringInfo = manag.ListStade();
             tBox.Text = "";
-            foreach (string s in stringInfo)
+            foreach (String s in stringInfo)
             {
                 tBox.Text += s + '\n';
             }
@@ -54,7 +53,7 @@ namespace JediTournamentWPF
         {
             stringInfo = manag.ListMatch();
             tBox.Text = "";
-            foreach (string s in stringInfo)
+            foreach (String s in stringInfo)
             {
                 tBox.Text += s + '\n';
             }
@@ -63,7 +62,7 @@ namespace JediTournamentWPF
         {
             stringInfo = manag.ListCaracteristiques();
             tBox.Text = "";
-            foreach (string s in stringInfo)
+            foreach (String s in stringInfo)
             {
                 tBox.Text += s + '\n';
             }
@@ -72,7 +71,7 @@ namespace JediTournamentWPF
         {
             stringInfo = manag.ListCaracteristiques();
             tBox.Text = "";
-            foreach (string s in stringInfo)
+            foreach (String s in stringInfo)
             {
                 tBox.Text += s + '\n';
             }

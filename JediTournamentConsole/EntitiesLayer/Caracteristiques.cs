@@ -19,6 +19,11 @@ namespace EntitiesLayer
             {
                 return valeur;
             }
+            set
+            {
+                valeur = value;
+
+            }
         }
         public string Nom
         {

@@ -8,18 +8,34 @@ namespace EntitiesLayer
 {
     public class Match : EntityObject
     {
-        
+
         private int idJediVainqueur;
+
+        public int IdJediVainqueur
+        {
+            get { return idJediVainqueur; }
+            set { idJediVainqueur = value; }
+        }
         private Jedi jedi1;
         private Jedi jedi2;
         private EPhaseTournoi phaseTournoi;
+
+        public EPhaseTournoi PhaseTournoi
+        {
+            get { return phaseTournoi; }
+            set { phaseTournoi = value; }
+        }
         private Stade stade;
 
-        public Stade Stad
+        public Stade Stade
         {
             get
             {
                 return stade;
+            }
+            set
+            {
+                stade = value;
             }
         }
         public Jedi Jedi1 
@@ -28,12 +44,20 @@ namespace EntitiesLayer
             {
                 return jedi1;
             }
+            set
+            {
+                jedi1 = value;
+            }
         }
         public Jedi Jedi2
         {
             get
             {
                 return jedi2;
+            }
+            set
+            {
+                jedi2 = value;
             }
         }
         public Match(int idJediVainqueur,Jedi jedi1,Jedi jedi2,EPhaseTournoi phaseTournoi,Stade stade,int id):base(id)
