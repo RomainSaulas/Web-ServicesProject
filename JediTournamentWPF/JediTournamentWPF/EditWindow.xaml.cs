@@ -62,7 +62,7 @@ namespace JediTournamentWPF
 
       private void Button_Click(object sender, RoutedEventArgs e)
       {
-         
+            win2 = new Window2();
          win2.Show();
       }
    }

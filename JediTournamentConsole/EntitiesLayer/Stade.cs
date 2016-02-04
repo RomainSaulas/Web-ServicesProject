@@ -45,6 +45,9 @@ namespace EntitiesLayer
             nbPlace = nb;
             planete = plan;
         }
+        public Stade()
+        {
+        }
 
     }
 }

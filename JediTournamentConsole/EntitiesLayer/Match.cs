@@ -69,5 +69,9 @@ namespace EntitiesLayer
             this.stade = stade;
         }
 
+        public Match()
+        {
+        }
+
     }
 }

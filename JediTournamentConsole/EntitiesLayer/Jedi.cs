@@ -53,6 +53,9 @@ namespace EntitiesLayer
             this.nom = nom;
         }
 
+        public Jedi()
+        {
+        }
         public override string ToString()
         {
             return nom;

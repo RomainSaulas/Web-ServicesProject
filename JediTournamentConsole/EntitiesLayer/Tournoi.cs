@@ -11,7 +11,21 @@ namespace EntitiesLayer
         private Match matchs;
         private string nom;
 
-        
+        public String Nom
+        {
+            get
+            {
+                return nom;
+            }
+            set
+            {
+                nom = value;
+            }
+        }
+        public Tournoi()
+        {
+        }
+
         public Tournoi(Match matchs,string nom,int id):base(id)
         {
             this.matchs = matchs;

@@ -2,3 +2,8 @@ C:\Users\User\Dropbox\Web-ServicesProject\JediTournamentConsole\EntitiesLayer\bi
 C:\Users\User\Dropbox\Web-ServicesProject\JediTournamentConsole\EntitiesLayer\bin\Debug\EntitiesLayer.pdb
 C:\Users\User\Dropbox\Web-ServicesProject\JediTournamentConsole\EntitiesLayer\obj\Debug\EntitiesLayer.dll
 C:\Users\User\Dropbox\Web-ServicesProject\JediTournamentConsole\EntitiesLayer\obj\Debug\EntitiesLayer.pdb
+C:\Users\Hp\Documents\GitHub\Web-ServicesProject\JediTournamentConsole\EntitiesLayer\bin\Debug\EntitiesLayer.dll
+C:\Users\Hp\Documents\GitHub\Web-ServicesProject\JediTournamentConsole\EntitiesLayer\bin\Debug\EntitiesLayer.pdb
+C:\Users\Hp\Documents\GitHub\Web-ServicesProject\JediTournamentConsole\EntitiesLayer\obj\Debug\EntitiesLayer.csprojResolveAssemblyReference.cache
+C:\Users\Hp\Documents\GitHub\Web-ServicesProject\JediTournamentConsole\EntitiesLayer\obj\Debug\EntitiesLayer.dll
+C:\Users\Hp\Documents\GitHub\Web-ServicesProject\JediTournamentConsole\EntitiesLayer\obj\Debug\EntitiesLayer.pdb
