@@ -63,6 +63,7 @@ namespace EntitiesLayer
         public Match(int idJediVainqueur,Jedi jedi1,Jedi jedi2,EPhaseTournoi phaseTournoi,Stade stade,int id):base(id)
         {
             this.idJediVainqueur = idJediVainqueur;
+            this.idJediVainqueur = 0;
             this.jedi1 = jedi1;
             this.jedi2 = jedi2;
             this.phaseTournoi = phaseTournoi;
