@@ -159,21 +159,27 @@ namespace BusinessLayer
             return list;
         }
 
-      public void JouerAuto(Match m)
+      public void JouerAuto(Match m, int r)
       {
-         Random rnd = new Random();
-
-         int r = rnd.Next(1, 100);
 
          float p = 0;
          float pj1 = 0, pj2 = 0;
+         float s1 = (from sante in m.Jedi1.Carac where sante.Nom == "Sante" select sante.Valeur).FirstOrDefault();
+         float s2 = (from sante in m.Jedi2.Carac where sante.Nom == "Sante" select sante.Valeur).FirstOrDefault();
+         float l1 = (from chance in m.Jedi1.Carac where chance.Nom == "Chance" select chance.Valeur).FirstOrDefault();
+         float l2 = (from chance in m.Jedi2.Carac where chance.Nom == "Chance" select chance.Valeur).FirstOrDefault();
+         float f1 = (from force in m.Jedi1.Carac where force.Nom == "Force" select force.Valeur).FirstOrDefault();
+         float f2 = (from force in m.Jedi2.Carac where force.Nom == "Force" select force.Valeur).FirstOrDefault();
+         float d1 = (from defense in m.Jedi1.Carac where defense.Nom == "Defense" select defense.Valeur).FirstOrDefault();
+         float d2 = (from defense in m.Jedi1.Carac where defense.Nom == "Defense" select defense.Valeur).FirstOrDefault();
 
-         pj1 = (from sante in m.Jedi1.Carac where sante.Nom == "Sante" select sante.Valeur).FirstOrDefault() / ((from chance in m.Jedi2.Carac where chance.Nom == "Chance" select chance.Valeur).FirstOrDefault() + (from force in m.Jedi2.Carac where force.Nom == "Force" select force.Valeur).FirstOrDefault() - (from defense in m.Jedi1.Carac where defense.Nom == "Defense" select defense.Valeur).FirstOrDefault());
-         pj2 = (from sante in m.Jedi2.Carac where sante.Nom == "Sante" select sante.Valeur).FirstOrDefault() / ((from chance in m.Jedi1.Carac where chance.Nom == "Chance" select chance.Valeur).FirstOrDefault() + (from force in m.Jedi1.Carac where force.Nom == "Force" select force.Valeur).FirstOrDefault() - (from defense in m.Jedi2.Carac where defense.Nom == "Defense" select defense.Valeur).FirstOrDefault());
+         pj1 = s1 / ((f2 + l2) * ((100 - d1) / 100));
+         pj2 = s2 / ((f1 + l2) * ((100 - d2) / 100));
 
          p = pj1 / (pj1 + pj2) * 100;
 
-         if (r > p)
+         Console.WriteLine("p = " + p + " r = " + r);
+         if (r < p)
          {
             m.IdJediVainqueur = m.Jedi1.Id;
          }
@@ -188,6 +194,7 @@ namespace BusinessLayer
          DalManager dalM = new DalManager();
          var listMatches = this.getAllMatchModel();
          List<ViewModelMatch> listHuitieme = new List<ViewModelMatch>();
+         Random rnd = new Random();
 
          listHuitieme = (from match in listMatches
                          where match.PhaseTournoi == EPhaseTournoi.HuitiemeFinale
@@ -196,7 +203,8 @@ namespace BusinessLayer
 
          foreach (ViewModelMatch match in listHuitieme)
          {
-            JouerAuto(match.Match);
+                int r = rnd.Next(1, 100);
+                JouerAuto(match.Match,r);
          }
 
          int i = 0;
@@ -218,16 +226,18 @@ namespace BusinessLayer
          var listMatches = this.getAllMatchModel();
          List<ViewModelMatch> listQuart = new List<ViewModelMatch>();
          List<Jedi> listVainqueurs = new List<Jedi>();
+            Random rnd = new Random();
 
-         listQuart = (from match in listMatches
+            listQuart = (from match in listMatches
                          where match.PhaseTournoi == EPhaseTournoi.QuartFinale
                       orderby match.Match.Id ascending
                       select match).ToList();
 
          foreach (ViewModelMatch match in listQuart)
          {
-            JouerAuto(match.Match);
-            listVainqueurs.Add((from jedis in dalM.GetJedi()
+                int r = rnd.Next(1, 100);
+                JouerAuto(match.Match, r);
+                listVainqueurs.Add((from jedis in dalM.GetJedi()
                                where jedis.Id == match.Match.IdJediVainqueur
                                select jedis).First());
          }
@@ -250,15 +260,17 @@ namespace BusinessLayer
          DalManager dalM = new DalManager();
          var listMatches = this.getAllMatchModel();
          List<ViewModelMatch> listDemi = new List<ViewModelMatch>();
+            Random rnd = new Random();
 
-         listDemi = (from match in listMatches
+            listDemi = (from match in listMatches
                      where match.PhaseTournoi == EPhaseTournoi.DemiFinale
                      orderby match.Match.Id ascending
                       select match).ToList();
 
          foreach (ViewModelMatch match in listDemi)
          {
-            JouerAuto(match.Match);
+                int r = rnd.Next(1, 100);
+                JouerAuto(match.Match, r);
          }
 
          int i = 0;
@@ -276,22 +288,26 @@ namespace BusinessLayer
 
       }
 
-      public void launchFinale()
+      public void launchFinale(Match finale)
       {
-         DalManager dalM = new DalManager();
-         var listMatches = this.getAllMatchModel();
-         List<ViewModelMatch> listFinale = new List<ViewModelMatch>();
+            //DalManager dalM = new DalManager();
+            //var listMatches = this.getAllMatchModel();
+            //List<ViewModelMatch> listFinale = new List<ViewModelMatch>();
 
-         listFinale = (from match in listMatches
-                     where match.PhaseTournoi == EPhaseTournoi.Finale
-                     select match).ToList();
+            /*listFinale = (from match in listMatches
+                        where match.PhaseTournoi == EPhaseTournoi.Finale
+                        select match).ToList();
 
-         foreach (ViewModelMatch match in listFinale)
-         {
-            JouerAuto(match.Match);
-         }
+            foreach (ViewModelMatch match in listFinale)
+            {
+               JouerAuto(match.Match);
+            }*/
+            Random rnd = new Random();
 
-      }
+            int r = rnd.Next(1, 100);
+            JouerAuto(finale, r);
+
+        }
 
    }
 }

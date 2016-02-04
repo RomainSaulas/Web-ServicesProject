@@ -30,7 +30,7 @@ namespace JediTournamentWPF
             InitializeComponent();
             var listMatch = (from mat in Manager.getAllMatchModel()
                              where mat.PhaseTournoi == EPhaseTournoi.HuitiemeFinale
-                             orderby mat.Id
+                             orderby mat.Match.Id
                              select mat).ToList();
             j1.Text = listMatch[0].Jedi1.Nom;
             j2.Text = listMatch[0].Jedi2.Nom;
@@ -55,7 +55,7 @@ namespace JediTournamentWPF
         {
             var listMatch = (from mat in Manager.getAllMatchModel()
                              where mat.PhaseTournoi == EPhaseTournoi.QuartFinale
-                             orderby mat.Id
+                             orderby mat.Match.Id
                              select mat).ToList();
             switch (etat_tournois)
             {
@@ -75,7 +75,7 @@ namespace JediTournamentWPF
                     Manager.launchQuart();
                     listMatch = (from mat in Manager.getAllMatchModel()
                                  where mat.PhaseTournoi == EPhaseTournoi.DemiFinale
-                                 orderby mat.Id
+                                 orderby mat.Match.Id
                                  select mat).ToList();
                     l1.Text = listMatch[0].Jedi1.Nom;
                     l2.Text = listMatch[0].Jedi2.Nom;
@@ -88,16 +88,19 @@ namespace JediTournamentWPF
                     Manager.launchDemi();
                     listMatch = (from mat in Manager.getAllMatchModel()
                                  where mat.PhaseTournoi == EPhaseTournoi.Finale
-                                 orderby mat.Id
+                                 orderby mat.Match.Id
                                  select mat).ToList();
                     m1.Text = listMatch[0].Jedi1.Nom;
                     m2.Text = listMatch[0].Jedi2.Nom;
                     this.etat_tournois++;
                     break;
                 case 3:
-                    Manager.launchFinale();
+                    Match matc = (from match in Manager.getAllMatchModel()
+                                  where match.PhaseTournoi == EPhaseTournoi.Finale
+                                  select match.Match).First();
+                    Manager.launchFinale( matc);
                     v1.Text = (from vainc in Manager.getAllJediModel()
-                               where vainc.Jedi.Id == listMatch[0].Match.IdJediVainqueur
+                               where vainc.Jedi.Id == matc.IdJediVainqueur
                                select vainc.Nom).First();
                     this.etat_tournois++;
                     button.Content = "Close";

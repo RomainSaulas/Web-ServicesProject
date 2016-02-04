@@ -8,7 +8,7 @@
         Title="Window2" Height="442.858" Width="956.303" Background="#FF8F8E8E">
     <Grid>
         <Canvas x:Name="Canvas_Menu" Margin="107,0,0,0" Background="#FF727272">
-            <TextBox x:Name="j1" Height="22" Canvas.Left="10" TextWrapping="Wrap" Text="TextBox" Canvas.Top="10" Width="87" TextChanged="j1_TextChanged"/>
+            <TextBox x:Name="j1" Height="22" Canvas.Left="10" TextWrapping="Wrap" Text="TextBox" Canvas.Top="10" Width="87"/>
             <TextBox x:Name="j3" Height="22" Canvas.Left="10" TextWrapping="Wrap" Text="TextBox" Canvas.Top="59" Width="87"/>
             <TextBox x:Name="j5" Height="22" Canvas.Left="10" TextWrapping="Wrap" Text="TextBox" Canvas.Top="108" Width="87"/>
             <TextBox x:Name="j2" Height="22" Canvas.Left="10" TextWrapping="Wrap" Text="TextBox" Canvas.Top="32" Width="87"/>
@@ -32,7 +32,7 @@
             <Rectangle Fill="Black" Height="2" Canvas.Left="97" Stroke="Black" Canvas.Top="275" Width="105"/>
             <Rectangle Fill="Black" Height="2" Canvas.Left="97" Stroke="Black" Canvas.Top="324" Width="105"/>
             <Rectangle Fill="Black" Height="2" Canvas.Left="97" Stroke="Black" Canvas.Top="373" Width="105"/>
-            <TextBox x:Name="k1" Height="22" Canvas.Left="202" TextWrapping="Wrap" Text="TextBox" Canvas.Top="16" Width="87" TextChanged="j1_Copy_TextChanged"/>
+            <TextBox x:Name="k1" Height="22" Canvas.Left="202" TextWrapping="Wrap" Text="TextBox" Canvas.Top="16" Width="87"/>
             <TextBox x:Name="k2" Height="22" Canvas.Left="202" TextWrapping="Wrap" Text="TextBox" Canvas.Top="65" Width="87"/>
             <TextBox x:Name="k3" Height="22" Canvas.Left="202" TextWrapping="Wrap" Text="TextBox" Canvas.Top="114" Width="87"/>
             <TextBox x:Name="k4" Height="22" Canvas.Left="202" TextWrapping="Wrap" Text="TextBox" Canvas.Top="163" Width="87"/>
@@ -63,7 +63,7 @@
             <TextBox x:Name="v1" Height="22" Canvas.Left="721" TextWrapping="Wrap" Text="TextBox" Canvas.Top="185" Width="87"/>
         </Canvas>
         <Grid x:Name="Grid_Param" HorizontalAlignment="Left" Width="107" Background="#FFE2E2E2">
-            <Button x:Name="button" Content="Play" HorizontalAlignment="Left" Height="28" Margin="10,374,0,0" VerticalAlignment="Top" Width="87" Click="btnPlay_Click"/>
+            <Button x:Name="button" Content="Play" HorizontalAlignment="Left" Height="28" Margin="10,355,0,0" VerticalAlignment="Top" Width="87" Click="btnPlay_Click"/>
         </Grid>
     </Grid>
 </Window>

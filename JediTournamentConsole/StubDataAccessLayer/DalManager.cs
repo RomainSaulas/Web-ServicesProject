@@ -20,22 +20,22 @@ namespace StubDataAccessLayer
         public DalManager()
         {
            
-            Caracteristiques Force1 = new Caracteristiques(EDefCaracteristique.Force,"Force",ETypeCaracteristique.Jedi,666,10);
+            Caracteristiques Force1 = new Caracteristiques(EDefCaracteristique.Force,"Force",ETypeCaracteristique.Jedi,66,10);
             Caracteristiques Force2= new Caracteristiques(EDefCaracteristique.Force,"Force",ETypeCaracteristique.Jedi,42,11);
 
-            Caracteristiques Defense1= new Caracteristiques(EDefCaracteristique.Defense,"Defense",ETypeCaracteristique.Jedi,666,12);
+            Caracteristiques Defense1= new Caracteristiques(EDefCaracteristique.Defense,"Defense",ETypeCaracteristique.Jedi,66,12);
             Caracteristiques Defense2= new Caracteristiques(EDefCaracteristique.Defense,"Defense",ETypeCaracteristique.Jedi,42,13);
 
-            Caracteristiques Vie1= new Caracteristiques(EDefCaracteristique.Sante,"Sante",ETypeCaracteristique.Jedi,666,14);
+            Caracteristiques Vie1= new Caracteristiques(EDefCaracteristique.Sante,"Sante",ETypeCaracteristique.Jedi,66,14);
             Caracteristiques Vie2= new Caracteristiques(EDefCaracteristique.Sante,"Sante",ETypeCaracteristique.Jedi,42,15);
 
-            Caracteristiques Chance1= new Caracteristiques(EDefCaracteristique.Chance,"Chance",ETypeCaracteristique.Jedi,666,16);
+            Caracteristiques Chance1= new Caracteristiques(EDefCaracteristique.Chance,"Chance",ETypeCaracteristique.Jedi,66,16);
             Caracteristiques Chance2= new Caracteristiques(EDefCaracteristique.Chance,"Chance",ETypeCaracteristique.Jedi,42,17);
 
-            Caracteristiques ForceStade= new Caracteristiques(EDefCaracteristique.Force,"Force",ETypeCaracteristique.Stade,666,18);
-            Caracteristiques DefenseStade= new Caracteristiques(EDefCaracteristique.Defense,"Defense",ETypeCaracteristique.Stade,6666,19);
-            Caracteristiques VieStade= new Caracteristiques(EDefCaracteristique.Sante,"Sante",ETypeCaracteristique.Stade,666,20);
-            Caracteristiques ChanceStade= new Caracteristiques(EDefCaracteristique.Chance,"Chance",ETypeCaracteristique.Stade,666,21);
+            Caracteristiques ForceStade= new Caracteristiques(EDefCaracteristique.Force,"Force",ETypeCaracteristique.Stade,66,18);
+            Caracteristiques DefenseStade= new Caracteristiques(EDefCaracteristique.Defense,"Defense",ETypeCaracteristique.Stade,66,19);
+            Caracteristiques VieStade= new Caracteristiques(EDefCaracteristique.Sante,"Sante",ETypeCaracteristique.Stade,66,20);
+            Caracteristiques ChanceStade= new Caracteristiques(EDefCaracteristique.Chance,"Chance",ETypeCaracteristique.Stade,66,21);
 
 
             Caracteristiques[] Un = {Force1,Defense1,Vie1,Chance1};
