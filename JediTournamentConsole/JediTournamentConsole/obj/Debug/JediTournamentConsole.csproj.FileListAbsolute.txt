@@ -58,3 +58,6 @@ C:\Users\User\Dropbox\Web-ServicesProject\JediTournamentConsole\JediTournamentCo
 C:\Users\User\Dropbox\Web-ServicesProject\JediTournamentConsole\JediTournamentConsole\obj\Debug\JediTournamentConsole.csprojResolveAssemblyReference.cache
 C:\Users\User\Dropbox\Web-ServicesProject\JediTournamentConsole\JediTournamentConsole\obj\Debug\JediTournamentConsole.exe
 C:\Users\User\Dropbox\Web-ServicesProject\JediTournamentConsole\JediTournamentConsole\obj\Debug\JediTournamentConsole.pdb
+C:\Users\Romain\Documents\Work\Web-ServicesProject\JediTournamentConsole\JediTournamentConsole\bin\Debug\JediTournamentConsole.exe.config
+C:\Users\Romain\Documents\Work\Web-ServicesProject\JediTournamentConsole\JediTournamentConsole\obj\Debug\JediTournamentConsole.exe
+C:\Users\Romain\Documents\Work\Web-ServicesProject\JediTournamentConsole\JediTournamentConsole\obj\Debug\JediTournamentConsole.pdb

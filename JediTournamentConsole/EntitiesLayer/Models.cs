@@ -10,22 +10,11 @@ namespace EntitiesLayer
 {
     public class ViewModelEdit : ViewModelBase
     {
-<<<<<<< HEAD
+
         //Model encapsulé dans le ViewModel
         private ObservableCollection<ViewModelJedi> _jedis;
           
         public ObservableCollection<ViewModelJedi> Jedis
-=======
-        private Jedi jedi;
-
-      public Jedi Jedi
-      {
-         get { return jedi;  }
-      }
-
-
-        public int Force
->>>>>>> refs/remotes/origin/master
         {
             get { return _jedis; }
             private set
