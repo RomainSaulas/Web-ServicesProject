@@ -58,3 +58,15 @@ C:\Users\User\Dropbox\Web-ServicesProject\JediTournamentConsole\JediTournamentCo
 C:\Users\User\Dropbox\Web-ServicesProject\JediTournamentConsole\JediTournamentConsole\obj\Debug\JediTournamentConsole.csprojResolveAssemblyReference.cache
 C:\Users\User\Dropbox\Web-ServicesProject\JediTournamentConsole\JediTournamentConsole\obj\Debug\JediTournamentConsole.exe
 C:\Users\User\Dropbox\Web-ServicesProject\JediTournamentConsole\JediTournamentConsole\obj\Debug\JediTournamentConsole.pdb
+C:\Users\Nicolas\Documents\GitHub\Web-ServicesProject\JediTournamentConsole\JediTournamentConsole\bin\Debug\JediTournamentConsole.exe.config
+C:\Users\Nicolas\Documents\GitHub\Web-ServicesProject\JediTournamentConsole\JediTournamentConsole\obj\Debug\JediTournamentConsole.exe
+C:\Users\Nicolas\Documents\GitHub\Web-ServicesProject\JediTournamentConsole\JediTournamentConsole\obj\Debug\JediTournamentConsole.pdb
+C:\Users\Nicolas\Documents\GitHub\Web-ServicesProject\JediTournamentConsole\JediTournamentConsole\bin\Debug\JediTournamentConsole.exe
+C:\Users\Nicolas\Documents\GitHub\Web-ServicesProject\JediTournamentConsole\JediTournamentConsole\bin\Debug\JediTournamentConsole.pdb
+C:\Users\Nicolas\Documents\GitHub\Web-ServicesProject\JediTournamentConsole\JediTournamentConsole\bin\Debug\BusinessLayer.dll
+C:\Users\Nicolas\Documents\GitHub\Web-ServicesProject\JediTournamentConsole\JediTournamentConsole\bin\Debug\EntitiesLayer.dll
+C:\Users\Nicolas\Documents\GitHub\Web-ServicesProject\JediTournamentConsole\JediTournamentConsole\bin\Debug\StubDataAccessLayer.dll
+C:\Users\Nicolas\Documents\GitHub\Web-ServicesProject\JediTournamentConsole\JediTournamentConsole\bin\Debug\BusinessLayer.pdb
+C:\Users\Nicolas\Documents\GitHub\Web-ServicesProject\JediTournamentConsole\JediTournamentConsole\bin\Debug\EntitiesLayer.pdb
+C:\Users\Nicolas\Documents\GitHub\Web-ServicesProject\JediTournamentConsole\JediTournamentConsole\bin\Debug\StubDataAccessLayer.pdb
+C:\Users\Nicolas\Documents\GitHub\Web-ServicesProject\JediTournamentConsole\JediTournamentConsole\obj\Debug\JediTournamentConsole.csprojResolveAssemblyReference.cache
