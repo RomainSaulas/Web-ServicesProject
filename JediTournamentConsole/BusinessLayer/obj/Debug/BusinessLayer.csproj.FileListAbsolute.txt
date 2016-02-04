@@ -61,3 +61,6 @@ C:\Users\User\Dropbox\Web-ServicesProject\JediTournamentConsole\BusinessLayer\bi
 C:\Users\User\Dropbox\Web-ServicesProject\JediTournamentConsole\BusinessLayer\obj\Debug\BusinessLayer.csprojResolveAssemblyReference.cache
 C:\Users\User\Dropbox\Web-ServicesProject\JediTournamentConsole\BusinessLayer\obj\Debug\BusinessLayer.dll
 C:\Users\User\Dropbox\Web-ServicesProject\JediTournamentConsole\BusinessLayer\obj\Debug\BusinessLayer.pdb
+C:\Users\Nicolas\Documents\GitHub\Web-ServicesProject\JediTournamentConsole\BusinessLayer\obj\Debug\BusinessLayer.csprojResolveAssemblyReference.cache
+C:\Users\Nicolas\Documents\GitHub\Web-ServicesProject\JediTournamentConsole\BusinessLayer\obj\Debug\BusinessLayer.dll
+C:\Users\Nicolas\Documents\GitHub\Web-ServicesProject\JediTournamentConsole\BusinessLayer\obj\Debug\BusinessLayer.pdb

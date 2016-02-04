@@ -121,6 +121,12 @@ namespace EntitiesLayer
             get { return match.PhaseTournoi; }
             set { match.PhaseTournoi= value; }
         }
+
+        public int Id
+        {
+            get { return match.Id; }
+            set { match.Id = value; }
+        }
         public ViewModelMatch(Match match)
         {
             this.match = match;
