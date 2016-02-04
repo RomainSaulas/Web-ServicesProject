@@ -261,7 +261,9 @@ namespace BusinessLayer
             JouerAuto(match.Match);
          }
 
+         int i = 0;
          // 2 matches de quart de demi-final
+
          while (i < 2)
          {
             //creer les nouveaux matches
