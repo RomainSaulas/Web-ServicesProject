@@ -4,17 +4,26 @@
 exe
 C#
 .cs
-C:\Users\Romain\Documents\Work\Web-ServicesProject\JediTournamentWPF\JediTournamentWPF\obj\Debug\
+C:\Users\Nicolas\Documents\GitHub\Web-ServicesProject\JediTournamentWPF\JediTournamentWPF\obj\Debug\
 JediTournamentWPF
 none
 false
 DEBUG;TRACE
+<<<<<<< HEAD
 C:\Users\Romain\Documents\Work\Web-ServicesProject\JediTournamentWPF\JediTournamentWPF\App.xaml
 41634520154
 
 12-1538126442
 14336223919
 CtrlJedi.xaml;EditWindow.xaml;MainWindow.xaml;Login.xaml;
+=======
+C:\Users\Nicolas\Documents\GitHub\Web-ServicesProject\JediTournamentWPF\JediTournamentWPF\App.xaml
+4-1466966184
 
-False
+12-162827614
+14-207832909
+EditWindow.xaml;MainWindow.xaml;Login.xaml;Window2.xaml;
+>>>>>>> refs/remotes/origin/master
+
+True
 
