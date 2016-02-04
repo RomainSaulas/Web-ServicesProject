@@ -1,0 +1,7 @@
+C:\Users\Hp\Documents\Visual Studio 2015\Projects\JediTournamentConsole\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
+C:\Users\Hp\Documents\Visual Studio 2015\Projects\JediTournamentConsole\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\Hp\Documents\Visual Studio 2015\Projects\JediTournamentConsole\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\Hp\Documents\Visual Studio 2015\Projects\JediTournamentConsole\DataAccessLayer\bin\Debug\EntitiesLayer.dll
+C:\Users\Hp\Documents\Visual Studio 2015\Projects\JediTournamentConsole\DataAccessLayer\bin\Debug\EntitiesLayer.pdb
+C:\Users\Hp\Documents\Visual Studio 2015\Projects\JediTournamentConsole\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\Users\Hp\Documents\Visual Studio 2015\Projects\JediTournamentConsole\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
