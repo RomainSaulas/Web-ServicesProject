@@ -10,11 +10,19 @@ none
 false
 DEBUG;TRACE
 C:\Users\Nicolas\Documents\GitHub\Web-ServicesProject\JediTournamentWPF\JediTournamentWPF\App.xaml
+<<<<<<< HEAD
 3-919109609
 
 71945548251
 14-207832909
 EditWindow.xaml;MainWindow.xaml;Login.xaml;
+=======
+4-1466966184
+
+81254861366
+14-207832909
+EditWindow.xaml;MainWindow.xaml;Login.xaml;Window2.xaml;
+>>>>>>> refs/remotes/origin/master
 
 False
 

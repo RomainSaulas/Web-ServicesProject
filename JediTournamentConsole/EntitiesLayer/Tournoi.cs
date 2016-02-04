@@ -10,6 +10,7 @@ namespace EntitiesLayer
     {
         private Match matchs;
         private string nom;
+
         
         public Tournoi(Match matchs,string nom,int id):base(id)
         {

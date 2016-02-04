@@ -18,7 +18,7 @@
                 <GridView>
                     <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Nom}"/>
                     <GridViewColumn Header="IsSith" DisplayMemberBinding="{Binding Sith}"/>
-                    <GridViewColumn Header="Health" DisplayMemberBinding="{Binding Health}"/>
+                    <GridViewColumn Header="Health" DisplayMemberBinding="{Binding Sante}"/>
                     <GridViewColumn Header="Force" DisplayMemberBinding="{Binding Force}"/>
                     <GridViewColumn Header="Defense" DisplayMemberBinding="{Binding Defense}"/>
                     <GridViewColumn Header="Luck" DisplayMemberBinding="{Binding Chance}"/>
