@@ -189,14 +189,16 @@ namespace BusinessLayer
          }
       }
 
-      public void launchHuitieme()
+      public void launchHuitieme(List<ViewModelMatch> listMatch)
       {
          DalManager dalM = new DalManager();
-         var listMatches = this.getAllMatchModel();
+            //var listMatches = this.getAllMatchModel();
+            List<Jedi> jedis = dalM.GetJedi();
          List<ViewModelMatch> listHuitieme = new List<ViewModelMatch>();
+            List<Jedi> vainqueurs = new List<Jedi>();
          Random rnd = new Random();
 
-         listHuitieme = (from match in listMatches
+         listHuitieme = (from match in listMatch
                          where match.PhaseTournoi == EPhaseTournoi.HuitiemeFinale
                          orderby match.Match.Id ascending
                          select match).ToList();
@@ -205,30 +207,37 @@ namespace BusinessLayer
          {
                 int r = rnd.Next(1, 100);
                 JouerAuto(match.Match,r);
+                vainqueurs.Add((from jeds in jedis
+                                where jeds.Id == match.Match.IdJediVainqueur
+                                select jeds).First());
          }
 
          int i = 0;
-         // 8 matches de huitième de final
+            // 8 matches de huitième de final
+            Stade stade = dalM.GetStade().First();
          while (i < 8)
          {
-            //creer les nouveaux matches
-            // TODO:  faire que les id des matches s'incrémentent automatiquement
-            // mettre dans la base de données tt ça
-            //new Match(null, listVainqueurs[i], listVainqueurs[i + 1], EPhaseTournoi.DemiFinale, new Stade(), 9);
+                //creer les nouveaux matches
+                // TODO:  faire que les id des matches s'incrémentent automatiquement
+                // mettre dans la base de données tt ça
+                //new Match(null, listVainqueurs[i], listVainqueurs[i + 1], EPhaseTournoi.DemiFinale, new Stade(), 9);
+
+                listMatch.Add(new ViewModelMatch( new Match(1, vainqueurs[i], vainqueurs[i + 1], EPhaseTournoi.QuartFinale,stade, i + 8)));
             i += 2;
          }
 
       }
 
-      public void launchQuart()
+      public void launchQuart(List<ViewModelMatch> listMatch)
       {
          DalManager dalM = new DalManager();
-         var listMatches = this.getAllMatchModel();
-         List<ViewModelMatch> listQuart = new List<ViewModelMatch>();
-         List<Jedi> listVainqueurs = new List<Jedi>();
+            List<Jedi> jedis = dalM.GetJedi();
+            List<ViewModelMatch> listQuart = new List<ViewModelMatch>();
+            List<Jedi> vainqueurs = new List<Jedi>();
+
             Random rnd = new Random();
 
-            listQuart = (from match in listMatches
+            listQuart = (from match in listMatch
                          where match.PhaseTournoi == EPhaseTournoi.QuartFinale
                       orderby match.Match.Id ascending
                       select match).ToList();
@@ -237,33 +246,36 @@ namespace BusinessLayer
          {
                 int r = rnd.Next(1, 100);
                 JouerAuto(match.Match, r);
-                listVainqueurs.Add((from jedis in dalM.GetJedi()
-                               where jedis.Id == match.Match.IdJediVainqueur
-                               select jedis).First());
+                vainqueurs.Add((from jedi in jedis
+                               where jedi.Id == match.Match.IdJediVainqueur
+                               select jedi).First());
          }
 
          int i = 0;
-         // 4 matches de quart de final
-         while(i < 4)
+            // 4 matches de quart de final
+            Stade stade = dalM.GetStade().First();
+            while (i < 4)
          {
-            //creer les nouveaux matches
-            // TODO:  faire que les id des matches s'incrémentent automatiquement
-            // mettre dans la base de données tt ça
-            //new Match(null, listVainqueurs[i], listVainqueurs[i + 1], EPhaseTournoi.DemiFinale, new Stade(), 9);
-            i += 2;
+                //creer les nouveaux matches
+                // TODO:  faire que les id des matches s'incrémentent automatiquement
+                // mettre dans la base de données tt ça
+                //new Match(null, listVainqueurs[i], listVainqueurs[i + 1], EPhaseTournoi.DemiFinale, new Stade(), 9);
+                listMatch.Add(new ViewModelMatch(new Match(1, vainqueurs[i], vainqueurs[i + 1], EPhaseTournoi.DemiFinale, stade, i + 8)));
+                i += 2;
          }
 
       }
 
-      public void launchDemi()
+      public void launchDemi(List<ViewModelMatch> listMatch)
       {
          DalManager dalM = new DalManager();
-         var listMatches = this.getAllMatchModel();
-         List<ViewModelMatch> listDemi = new List<ViewModelMatch>();
+            List<Jedi> jedis = dalM.GetJedi();
+            List<ViewModelMatch> listDemi = new List<ViewModelMatch>();
+            List<Jedi> vainqueurs = new List<Jedi>();
             Random rnd = new Random();
 
-            listDemi = (from match in listMatches
-                     where match.PhaseTournoi == EPhaseTournoi.DemiFinale
+            listDemi = (from match in listMatch
+                        where match.PhaseTournoi == EPhaseTournoi.DemiFinale
                      orderby match.Match.Id ascending
                       select match).ToList();
 
@@ -271,19 +283,23 @@ namespace BusinessLayer
          {
                 int r = rnd.Next(1, 100);
                 JouerAuto(match.Match, r);
-         }
-
-         int i = 0;
+                vainqueurs.Add((from jedi in jedis
+                                where jedi.Id == match.Match.IdJediVainqueur
+                                select jedi).First());
+            }
+            Stade stade = dalM.GetStade().First();
+            int i = 0;
          // 2 matches de quart de demi-final
 
          while (i < 2)
          {
-            //creer les nouveaux matches
-            // TODO:  faire que les id des matches s'incrémentent automatiquement
-            // mettre dans la base de données tt ça
-            //new Match(null, listVainqueurs[i], listVainqueurs[i + 1], EPhaseTournoi.DemiFinale, new Stade(), 9);
+                //creer les nouveaux matches
+                // TODO:  faire que les id des matches s'incrémentent automatiquement
+                // mettre dans la base de données tt ça
+                //new Match(null, listVainqueurs[i], listVainqueurs[i + 1], EPhaseTournoi.DemiFinale, new Stade(), 9);
+                listMatch.Add(new ViewModelMatch(new Match(1, vainqueurs[i], vainqueurs[i + 1], EPhaseTournoi.Finale, stade, i + 8)));
 
-            i += 2;
+                i += 2;
          }
 
       }

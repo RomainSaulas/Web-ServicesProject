@@ -24,11 +24,12 @@ namespace JediTournamentWPF
 
         public int etat_tournois = 0;
         BusinessLayer.JediTournamentManager Manager = new JediTournamentManager();
+        List<ViewModelMatch> listMatch = new List<ViewModelMatch>(); 
 
         public Window2()
         {
             InitializeComponent();
-            var listMatch = (from mat in Manager.getAllMatchModel()
+            listMatch = (from mat in Manager.getAllMatchModel()
                              where mat.PhaseTournoi == EPhaseTournoi.HuitiemeFinale
                              orderby mat.Match.Id
                              select mat).ToList();
@@ -53,49 +54,50 @@ namespace JediTournamentWPF
 
         void btnPlay_Click(object sender, RoutedEventArgs e)
         {
-            var listMatch = (from mat in Manager.getAllMatchModel()
-                             where mat.PhaseTournoi == EPhaseTournoi.QuartFinale
-                             orderby mat.Match.Id
-                             select mat).ToList();
             switch (etat_tournois)
             {
                 case 0:
-                    Manager.launchHuitieme();
-                    k1.Text = listMatch[0].Jedi1.Nom;
-                    k2.Text = listMatch[0].Jedi2.Nom;
-                    k3.Text = listMatch[1].Jedi1.Nom;
-                    k4.Text = listMatch[1].Jedi2.Nom;
-                    k5.Text = listMatch[2].Jedi1.Nom;
-                    k6.Text = listMatch[2].Jedi2.Nom;
-                    k7.Text = listMatch[3].Jedi1.Nom;
-                    k8.Text = listMatch[3].Jedi2.Nom;
+                    Manager.launchHuitieme(listMatch);
+                    var listQuart = (from mat in listMatch
+                                     where mat.PhaseTournoi == EPhaseTournoi.QuartFinale
+                                     orderby mat.Match.Id
+                                     select mat).ToList();
+
+                    k1.Text = listQuart[0].Jedi1.Nom;
+                    k2.Text = listQuart[0].Jedi2.Nom;
+                    k3.Text = listQuart[1].Jedi1.Nom;
+                    k4.Text = listQuart[1].Jedi2.Nom;
+                    k5.Text = listQuart[2].Jedi1.Nom;
+                    k6.Text = listQuart[2].Jedi2.Nom;
+                    k7.Text = listQuart[3].Jedi1.Nom;
+                    k8.Text = listQuart[3].Jedi2.Nom;
                     this.etat_tournois++;
                     break;
                 case 1:
-                    Manager.launchQuart();
-                    listMatch = (from mat in Manager.getAllMatchModel()
+                    Manager.launchQuart(listMatch);
+                    var listDemi = (from mat in listMatch
                                  where mat.PhaseTournoi == EPhaseTournoi.DemiFinale
                                  orderby mat.Match.Id
                                  select mat).ToList();
-                    l1.Text = listMatch[0].Jedi1.Nom;
-                    l2.Text = listMatch[0].Jedi2.Nom;
-                    l3.Text = listMatch[1].Jedi1.Nom;
-                    l4.Text = listMatch[1].Jedi2.Nom;
+                    l1.Text = listDemi[0].Jedi1.Nom;
+                    l2.Text = listDemi[0].Jedi2.Nom;
+                    l3.Text = listDemi[1].Jedi1.Nom;
+                    l4.Text = listDemi[1].Jedi2.Nom;
 
                     this.etat_tournois++;
                     break;
                 case 2:
-                    Manager.launchDemi();
-                    listMatch = (from mat in Manager.getAllMatchModel()
+                    Manager.launchDemi(listMatch);
+                    var listFinale = (from mat in listMatch
                                  where mat.PhaseTournoi == EPhaseTournoi.Finale
                                  orderby mat.Match.Id
                                  select mat).ToList();
-                    m1.Text = listMatch[0].Jedi1.Nom;
-                    m2.Text = listMatch[0].Jedi2.Nom;
+                    m1.Text = listFinale[0].Jedi1.Nom;
+                    m2.Text = listFinale[0].Jedi2.Nom;
                     this.etat_tournois++;
                     break;
                 case 3:
-                    Match matc = (from match in Manager.getAllMatchModel()
+                    Match matc = (from match in listMatch
                                   where match.PhaseTournoi == EPhaseTournoi.Finale
                                   select match.Match).First();
                     Manager.launchFinale( matc);
