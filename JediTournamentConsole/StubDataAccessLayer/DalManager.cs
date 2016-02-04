@@ -70,14 +70,24 @@ namespace StubDataAccessLayer
 
          Stade Tatouine = new Stade(Stade,50000,"Tatouine",3);
 
-            Match Versus1 = new Match(1,Yoda,Palpatine,EPhaseTournoi.Finale,Tatouine,4);
-            Match Versus2 = new Match(5, JeanPierre, Palpatine, EPhaseTournoi.Finale, Tatouine, 4);
-            Match Versus3 = new Match(1, Yoda, Palpatine, EPhaseTournoi.Finale, Tatouine, 4);
-            Match Versus4 = new Match(5, JeanPierre, Palpatine, EPhaseTournoi.Finale, Tatouine, 4);
-            Match Versus5 = new Match(1, Yoda, Palpatine, EPhaseTournoi.Finale, Tatouine, 4);
-            Match Versus6 = new Match(5, JeanPierre, Palpatine, EPhaseTournoi.Finale, Tatouine, 4);
-            Match Versus7 = new Match(1, Yoda, Palpatine, EPhaseTournoi.Finale, Tatouine, 4);
-            Match Versus8 = new Match(5, JeanPierre, Palpatine, EPhaseTournoi.Finale, Tatouine, 4);
+            Match Versus1 = new Match(1,Yoda,Palpatine,EPhaseTournoi.HuitiemeFinale,Tatouine,1);
+            Match Versus2 = new Match(5, JeanPierre, JarJar, EPhaseTournoi.HuitiemeFinale, Tatouine, 2);
+            Match Versus3 = new Match(1, Luke, Rey, EPhaseTournoi.HuitiemeFinale, Tatouine, 3);
+            Match Versus4 = new Match(5, ObiWan, Vader, EPhaseTournoi.HuitiemeFinale, Tatouine, 4);
+            Match Versus5 = new Match(1, Finn, Grievous, EPhaseTournoi.HuitiemeFinale, Tatouine, 5);
+            Match Versus6 = new Match(5, Maul, QuiGon, EPhaseTournoi.HuitiemeFinale, Tatouine, 6);
+            Match Versus7 = new Match(1, Windu, Kylo, EPhaseTournoi.HuitiemeFinale, Tatouine, 7);
+            Match Versus8 = new Match(5, Dooku, Asajj, EPhaseTournoi.HuitiemeFinale, Tatouine, 8);
+
+            Match Versus9 = new Match(1, JeanPierre, Palpatine, EPhaseTournoi.QuartFinale, Tatouine, 9);
+            Match Versus10 = new Match(5, Rey, Vader, EPhaseTournoi.QuartFinale, Tatouine, 10);
+            Match Versus11 = new Match(1, Finn, Maul, EPhaseTournoi.QuartFinale, Tatouine, 11);
+            Match Versus12 = new Match(5, Kylo, Dooku, EPhaseTournoi.QuartFinale, Tatouine, 12);
+
+            Match Versus13 = new Match(1, JeanPierre, Rey, EPhaseTournoi.DemiFinale, Tatouine, 13);
+            Match Versus14 = new Match(5, Finn, Kylo, EPhaseTournoi.DemiFinale, Tatouine, 14);
+
+            Match Versus15 = new Match(1, JeanPierre, Kylo, EPhaseTournoi.Finale, Tatouine, 15);
 
          listUtilisateur.Add(Romain);
             listUtilisateur.Add(Simon);
@@ -99,10 +109,23 @@ namespace StubDataAccessLayer
             listJedi.Add(Windu);
             listJedi.Add(Grievous);
 
-         listMatch.Add(Versus1);
+            listMatch.Add(Versus1);
             listMatch.Add(Versus2);
-           
-            listStade.Add(Tatouine);
+            listMatch.Add(Versus3);
+            listMatch.Add(Versus4);
+            listMatch.Add(Versus5);
+            listMatch.Add(Versus6);
+            listMatch.Add(Versus7);
+            listMatch.Add(Versus8);
+         listMatch.Add(Versus9);
+         listMatch.Add(Versus10);
+         listMatch.Add(Versus11);
+         listMatch.Add(Versus12);
+         listMatch.Add(Versus13);
+         listMatch.Add(Versus14);
+         listMatch.Add(Versus15);
+
+         listStade.Add(Tatouine);
             
             listCaracteristiques.Add(Force1);
             listCaracteristiques.Add(Force2);
