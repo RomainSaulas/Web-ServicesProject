@@ -122,8 +122,8 @@ namespace BusinessLayer
         public List<ViewModelJedi> getAllJediModel()
         {
             List<ViewModelJedi> list = new List<ViewModelJedi>();
-            var manager = new BusinessLayer.JediTournamentManager();
-            var jedis = manager.ListJediInfo();
+            var manager = new DalManager();
+            var jedis = manager.GetJedi();
             foreach (Jedi jeds in jedis)
             {
                 list.Add(new ViewModelJedi(jeds));
@@ -135,8 +135,8 @@ namespace BusinessLayer
         public List<ViewModelStade> getAllStadeModel()
         {
             List<ViewModelStade> list = new List<ViewModelStade>();
-            var manager = new BusinessLayer.JediTournamentManager();
-            var stades = manager.ListStadeInfo();
+            var manager = new DalManager();
+            var stades = manager.GetStade();
             foreach (Stade stads in stades)
             {
                 list.Add(new ViewModelStade(stads));
@@ -148,8 +148,9 @@ namespace BusinessLayer
         public List<ViewModelMatch> getAllMatchModel()
         {
             List<ViewModelMatch> list = new List<ViewModelMatch>();
-            var manager = new BusinessLayer.JediTournamentManager();
-            var matches = manager.ListMatchInfo();
+            var manager = new DalManager();
+            var matches = manager.GetMatch();
+      
             foreach (Match matchs in matches)
             {
                 list.Add(new ViewModelMatch(matchs));
@@ -158,5 +159,137 @@ namespace BusinessLayer
             return list;
         }
 
-    }
+      public void JouerAuto(Match m)
+      {
+         Random rnd = new Random();
+
+         int r = rnd.Next(1, 100);
+
+         float p = 0;
+         float pj1 = 0, pj2 = 0;
+
+         pj1 = (from sante in m.Jedi1.Carac where sante.Nom == "Sante" select sante.Valeur).FirstOrDefault() / ((from chance in m.Jedi2.Carac where chance.Nom == "Chance" select chance.Valeur).FirstOrDefault() + (from force in m.Jedi2.Carac where force.Nom == "Force" select force.Valeur).FirstOrDefault() - (from defense in m.Jedi1.Carac where defense.Nom == "Defense" select defense.Valeur).FirstOrDefault());
+         pj2 = (from sante in m.Jedi2.Carac where sante.Nom == "Sante" select sante.Valeur).FirstOrDefault() / ((from chance in m.Jedi1.Carac where chance.Nom == "Chance" select chance.Valeur).FirstOrDefault() + (from force in m.Jedi1.Carac where force.Nom == "Force" select force.Valeur).FirstOrDefault() - (from defense in m.Jedi2.Carac where defense.Nom == "Defense" select defense.Valeur).FirstOrDefault());
+
+         p = pj1 / (pj1 + pj2) * 100;
+
+         if (r > p)
+         {
+            m.IdJediVainqueur = m.Jedi1.Id;
+         }
+         else
+         {
+            m.IdJediVainqueur = m.Jedi2.Id;
+         }
+      }
+
+      public void launchHuitieme()
+      {
+         DalManager dalM = new DalManager();
+         var listMatches = this.getAllMatchModel();
+         List<ViewModelMatch> listHuitieme = new List<ViewModelMatch>();
+
+         listHuitieme = (from match in listMatches
+                         where match.PhaseTournoi == EPhaseTournoi.HuitiemeFinale
+                         orderby match.Match.Id ascending
+                         select match).ToList();
+
+         foreach (ViewModelMatch match in listHuitieme)
+         {
+            JouerAuto(match.Match);
+         }
+
+         int i = 0;
+         // 8 matches de huitième de final
+         while (i < 8)
+         {
+            //creer les nouveaux matches
+            // TODO:  faire que les id des matches s'incrémentent automatiquement
+            // mettre dans la base de données tt ça
+            //new Match(null, listVainqueurs[i], listVainqueurs[i + 1], EPhaseTournoi.DemiFinale, new Stade(), 9);
+            i += 2;
+         }
+
+      }
+
+      public void launchQuart()
+      {
+         DalManager dalM = new DalManager();
+         var listMatches = this.getAllMatchModel();
+         List<ViewModelMatch> listQuart = new List<ViewModelMatch>();
+         List<Jedi> listVainqueurs = new List<Jedi>();
+
+         listQuart = (from match in listMatches
+                         where match.PhaseTournoi == EPhaseTournoi.QuartFinale
+                      orderby match.Match.Id ascending
+                      select match).ToList();
+
+         foreach (ViewModelMatch match in listQuart)
+         {
+            JouerAuto(match.Match);
+            listVainqueurs.Add((from jedis in dalM.GetJedi()
+                               where jedis.Id == match.Match.IdJediVainqueur
+                               select jedis).First());
+         }
+
+         int i = 0;
+         // 4 matches de quart de final
+         while(i < 4)
+         {
+            //creer les nouveaux matches
+            // TODO:  faire que les id des matches s'incrémentent automatiquement
+            // mettre dans la base de données tt ça
+            //new Match(null, listVainqueurs[i], listVainqueurs[i + 1], EPhaseTournoi.DemiFinale, new Stade(), 9);
+            i += 2;
+         }
+
+      }
+
+      public void launchDemi()
+      {
+         DalManager dalM = new DalManager();
+         var listMatches = this.getAllMatchModel();
+         List<ViewModelMatch> listDemi = new List<ViewModelMatch>();
+
+         listDemi = (from match in listMatches
+                     where match.PhaseTournoi == EPhaseTournoi.DemiFinale
+                     orderby match.Match.Id ascending
+                      select match).ToList();
+
+         foreach (ViewModelMatch match in listDemi)
+         {
+            JouerAuto(match.Match);
+         }
+
+         // 2 matches de quart de demi-final
+         while (i < 2)
+         {
+            //creer les nouveaux matches
+            // TODO:  faire que les id des matches s'incrémentent automatiquement
+            // mettre dans la base de données tt ça
+            //new Match(null, listVainqueurs[i], listVainqueurs[i + 1], EPhaseTournoi.DemiFinale, new Stade(), 9);
+
+            i += 2;
+         }
+
+      }
+
+      public void launchFinale()
+      {
+         DalManager dalM = new DalManager();
+         var listMatches = this.getAllMatchModel();
+         List<ViewModelMatch> listFinale = new List<ViewModelMatch>();
+
+         listFinale = (from match in listMatches
+                     where match.PhaseTournoi == EPhaseTournoi.Finale
+                     select match).ToList();
+
+         foreach (ViewModelMatch match in listFinale)
+         {
+            JouerAuto(match.Match);
+         }
+
+      }
+
+   }
 }

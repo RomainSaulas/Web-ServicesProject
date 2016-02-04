@@ -35,12 +35,16 @@ namespace StubDataAccessLayer
             Caracteristiques[] Un = {Force1,Defense1,Vie1,Chance1};
             Caracteristiques[] Deux = {Force2,Defense2,Vie2,Chance2};
             Caracteristiques[] Stade = {ForceStade,DefenseStade,VieStade,ChanceStade};
+
             Utilisateur Romain = new Utilisateur("Saulas", "Romain", "rosaulas", "saluasor",12314);
             Utilisateur Simon = new Utilisateur("Dujardin", "Simon", "admin", "admin", 12314);
+
             Jedi Yoda = new Jedi(Un,false,"Yoda",1);
             Jedi Palpatine = new Jedi(Deux,true,"Palpatine",2);
             Jedi JeanPierre = new Jedi(Un, true, "Jean-Pierre", 5);
+
             Stade Tatouine = new Stade(Stade,50000,"Tatouine",3);
+
             Match Versus1 = new Match(1,Yoda,Palpatine,EPhaseTournoi.Finale,Tatouine,4);
             Match Versus2 = new Match(5, JeanPierre, Palpatine, EPhaseTournoi.Finale, Tatouine, 4);
 
