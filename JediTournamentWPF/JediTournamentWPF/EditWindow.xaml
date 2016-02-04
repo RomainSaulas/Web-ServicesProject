@@ -15,7 +15,8 @@
             <RowDefinition Height="20"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="20"/>
-            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="8"/>
+            <RowDefinition Height="15"/>
             <RowDefinition Height="20"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="20"/>
@@ -23,9 +24,9 @@
             <RowDefinition Height="20"/>
         </Grid.RowDefinitions>
         <ComboBox Grid.Row="1" Grid.Column="0" x:Name="ComboItems" SelectionChanged="ComboItems_SelectionChanged"/>
-        <Button Grid.Row="3" Content="Button" />
-        <Button Grid.Row="5" Content="Button" />
-        <Button Grid.Row="7" Content="Button" />
+        <Button Grid.Row="3" Content="Tournoi" Grid.RowSpan="2" Click="Button_Click" />
+        <Button Grid.Row="6" Content="Button" />
+        <Button Grid.Row="8" Content="Button" />
 
         <ListView
             Grid.Column="2"
@@ -79,6 +80,7 @@
                 </GridView>
             </ListView.View>
         </ListView>
+
 
         <my:CtrlJedi x:Name="ctrlJedi" Visibility="Collapsed" Background="LightBlue" Grid.Column="4" Grid.RowSpan="8" DataContext="{Binding SelectedJedi}" ></my:CtrlJedi>
         

@@ -1,7 +1,7 @@
 ﻿JediTournamentWPF
 
 
-exe
+winexe
 C#
 .cs
 C:\Users\Romain\Documents\Work\Web-ServicesProject\JediTournamentWPF\JediTournamentWPF\obj\Debug\
@@ -16,5 +16,5 @@ C:\Users\Romain\Documents\Work\Web-ServicesProject\JediTournamentWPF\JediTournam
 14336223919
 CtrlJedi.xaml;CtrlMatch.xaml;CtrlStade.xaml;EditWindow.xaml;MainWindow.xaml;Login.xaml;Window2.xaml;
 
-False
+True
 

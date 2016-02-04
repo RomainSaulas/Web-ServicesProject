@@ -19,7 +19,8 @@ namespace JediTournamentWPF
     /// </summary>
     public partial class EditWindow : Window
     {
-        public EditWindow()
+      Window2 win2 = null; 
+      public EditWindow()
         {
             
             
@@ -76,5 +77,25 @@ namespace JediTournamentWPF
             }
         }
 
-    }
+      private void Button_Click(object sender, RoutedEventArgs e)
+      {
+         if(win2 == null)
+         {
+            win2 = new Window2();
+            win2.Owner = this;
+            win2.Show();
+
+            win2.Closing += OnCloseEvent;
+            
+
+
+         }
+            
+      }
+      private void OnCloseEvent(object sender, EventArgs args)
+      {
+         win2.Closing -= OnCloseEvent;
+         win2 = null;
+      }
+   }
 }

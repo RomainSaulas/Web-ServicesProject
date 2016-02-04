@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 c:\users\sidujardin\documents\visual studio 2013\Projects\JediTournamentConsole\EntitiesLayer\bin\Debug\EntitiesLayer.dll
 c:\users\sidujardin\documents\visual studio 2013\Projects\JediTournamentConsole\EntitiesLayer\bin\Debug\EntitiesLayer.pdb
 c:\users\sidujardin\documents\visual studio 2013\Projects\JediTournamentConsole\EntitiesLayer\obj\Debug\EntitiesLayer.dll
@@ -20,11 +21,13 @@ H:\Documents\ZZ2\ServiceWeb\Projet\JediTournamentConsole\EntitiesLayer\bin\Debug
 H:\Documents\ZZ2\ServiceWeb\Projet\JediTournamentConsole\EntitiesLayer\obj\Debug\EntitiesLayer.csprojResolveAssemblyReference.cache
 H:\Documents\ZZ2\ServiceWeb\Projet\JediTournamentConsole\EntitiesLayer\obj\Debug\EntitiesLayer.dll
 H:\Documents\ZZ2\ServiceWeb\Projet\JediTournamentConsole\EntitiesLayer\obj\Debug\EntitiesLayer.pdb
+=======
+>>>>>>> f32a7507c3c9e0b464dd10b2fb234c3b91cb8bef
 C:\Users\User\Dropbox\Web-ServicesProject\JediTournamentConsole\EntitiesLayer\bin\Debug\EntitiesLayer.dll
 C:\Users\User\Dropbox\Web-ServicesProject\JediTournamentConsole\EntitiesLayer\bin\Debug\EntitiesLayer.pdb
-C:\Users\User\Dropbox\Web-ServicesProject\JediTournamentConsole\EntitiesLayer\obj\Debug\EntitiesLayer.csprojResolveAssemblyReference.cache
 C:\Users\User\Dropbox\Web-ServicesProject\JediTournamentConsole\EntitiesLayer\obj\Debug\EntitiesLayer.dll
 C:\Users\User\Dropbox\Web-ServicesProject\JediTournamentConsole\EntitiesLayer\obj\Debug\EntitiesLayer.pdb
+<<<<<<< HEAD
 C:\Users\Nicolas\Documents\GitHub\Web-ServicesProject\JediTournamentConsole\EntitiesLayer\bin\Debug\EntitiesLayer.dll
 C:\Users\Nicolas\Documents\GitHub\Web-ServicesProject\JediTournamentConsole\EntitiesLayer\bin\Debug\EntitiesLayer.pdb
 C:\Users\Nicolas\Documents\GitHub\Web-ServicesProject\JediTournamentConsole\EntitiesLayer\obj\Debug\EntitiesLayer.csprojResolveAssemblyReference.cache
@@ -35,3 +38,5 @@ C:\Users\Romain\Documents\Work\Web-ServicesProject\JediTournamentConsole\Entitie
 C:\Users\Romain\Documents\Work\Web-ServicesProject\JediTournamentConsole\EntitiesLayer\obj\Debug\EntitiesLayer.dll
 C:\Users\Romain\Documents\Work\Web-ServicesProject\JediTournamentConsole\EntitiesLayer\obj\Debug\EntitiesLayer.pdb
 C:\Users\Romain\Documents\Work\Web-ServicesProject\JediTournamentConsole\EntitiesLayer\obj\Debug\EntitiesLayer.csprojResolveAssemblyReference.cache
+=======
+>>>>>>> f32a7507c3c9e0b464dd10b2fb234c3b91cb8bef
