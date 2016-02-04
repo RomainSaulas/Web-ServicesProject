@@ -37,6 +37,8 @@ namespace JediTournamentWPF
             //List<Object> list;
             //ListItems.Items.Clear();
 
+            EntitiesLayer.ViewModelEdit vmEdit;
+
             String selection = ComboItems.SelectedItem.ToString();
             //ListItems.Items.Clear();
             BusinessLayer.JediTournamentManager manager = new BusinessLayer.JediTournamentManager();
@@ -44,18 +46,33 @@ namespace JediTournamentWPF
             ListItemsJedi.Visibility = System.Windows.Visibility.Collapsed;
             ListItemsStade.Visibility = System.Windows.Visibility.Collapsed;
             ListItemsMatch.Visibility = System.Windows.Visibility.Collapsed;
+
+            ctrlStade.Visibility = System.Windows.Visibility.Collapsed;
+            ctrlJedi.Visibility = System.Windows.Visibility.Collapsed;
+            ctrlMatch.Visibility = System.Windows.Visibility.Collapsed;
+
+
             // récupération des Jedis
             switch (choice[2]){
-                case "Stades": ListItemsStade.ItemsSource = manager.getAllStadeModel(); 
-                    ListItemsStade.Visibility = System.Windows.Visibility.Visible; break;
-               
-                case "Jedis": /*ListItemsJedi.ItemsSource = manager.ListJediInfo();*/
-                    ListItemsJedi.Visibility = System.Windows.Visibility.Visible;
-                    EntitiesLayer.ViewModelEdit vmEdit = new EntitiesLayer.ViewModelEdit(manager.ListJediInfo());
+                case "Stades": 
+                    ListItemsStade.Visibility = System.Windows.Visibility.Visible;
+                    ctrlStade.Visibility = System.Windows.Visibility.Visible;
+                    vmEdit = new EntitiesLayer.ViewModelEdit(manager.ListStadeInfo());
                     this.DataContext = vmEdit;
                     break;
-                case "Matchs": ListItemsMatch.ItemsSource = manager.getAllMatchModel(); 
-                    ListItemsMatch.Visibility = System.Windows.Visibility.Visible; break;
+               
+                case "Jedis":
+                    ListItemsJedi.Visibility = System.Windows.Visibility.Visible;
+                    ctrlJedi.Visibility = System.Windows.Visibility.Visible;
+                    vmEdit = new EntitiesLayer.ViewModelEdit(manager.ListJediInfo());
+                    this.DataContext = vmEdit;
+                    break;
+
+                case "Matchs": 
+                    ListItemsMatch.Visibility = System.Windows.Visibility.Visible;
+                    ctrlMatch.Visibility = System.Windows.Visibility.Visible;
+                    vmEdit = new EntitiesLayer.ViewModelEdit(manager.ListMatchInfo());
+                    this.DataContext = vmEdit; break;
             }
         }
 

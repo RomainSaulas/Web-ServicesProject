@@ -2,7 +2,7 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:my="clr-namespace:JediTournamentWPF"
-        Title="EditWindow" Height="1000" Width="1200">
+        Title="EditWindow" Height="600" Width="1200">
     <Grid Margin="20">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="200*"/>
@@ -29,11 +29,11 @@
 
         <ListView
             Grid.Column="2"
-            Grid.RowSpan="8"
+            Grid.RowSpan="10"
             Visibility="Collapsed" 
             x:Name="ListItemsJedi" 
             ItemsSource="{Binding Path=Jedis}"
-            SelectedItem="{Binding Path=SelectedItem}">
+            SelectedItem="{Binding Path=SelectedJedi}">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Nom}"/>
@@ -45,7 +45,13 @@
                 </GridView>
             </ListView.View>
         </ListView>
-        <ListView  Grid.Column="2" Grid.RowSpan="8" Visibility="Collapsed" x:Name="ListItemsStade">
+        <ListView  
+            Grid.Column="2" 
+            Grid.RowSpan="10" 
+            Visibility="Collapsed" 
+            x:Name="ListItemsStade"
+            ItemsSource="{Binding Path=Stades}"
+            SelectedItem="{Binding Path=SelectedStade}">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Planete" DisplayMemberBinding="{Binding Planete}"/>
@@ -53,11 +59,17 @@
                     <GridViewColumn Header="Health" DisplayMemberBinding="{Binding Sante}"/>
                     <GridViewColumn Header="Force" DisplayMemberBinding="{Binding Force}"/>
                     <GridViewColumn Header="Defense" DisplayMemberBinding="{Binding Defense}"/>
-                    <GridViewColumn Header="Luck" DisplayMemberBinding="{Binding Luck}"/>
+                    <GridViewColumn Header="Luck" DisplayMemberBinding="{Binding Chance}"/>
                 </GridView>
             </ListView.View>
         </ListView>
-        <ListView  Grid.Column="2" Grid.RowSpan="8" Visibility="Collapsed" x:Name="ListItemsMatch">
+        <ListView 
+            Grid.Column="2"
+            Grid.RowSpan="10" 
+            Visibility="Collapsed" 
+            x:Name="ListItemsMatch"
+            ItemsSource="{Binding Path=Matchs}"
+            SelectedItem="{Binding Path=SelectedMatch}">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Phase" DisplayMemberBinding="{Binding PhaseTournoi}"/>
@@ -68,8 +80,11 @@
             </ListView.View>
         </ListView>
 
-        <my:CtrlJedi Background="LightBlue" Grid.Column="4" Grid.RowSpan="8" DataContext="{Binding SelectedItem}" ></my:CtrlJedi>
+        <my:CtrlJedi x:Name="ctrlJedi" Visibility="Collapsed" Background="LightBlue" Grid.Column="4" Grid.RowSpan="8" DataContext="{Binding SelectedJedi}" ></my:CtrlJedi>
         
+        <my:CtrlStade x:Name="ctrlStade" Visibility="Collapsed" Background="Beige" Grid.Column="4" Grid.RowSpan="8" DataContext="{Binding SelectedStade}" ></my:CtrlStade>
+
+        <my:CtrlMatch x:Name="ctrlMatch" Visibility="Collapsed" Background="Red" Grid.Column="4" Grid.RowSpan="8" DataContext="{Binding SelectedMatch}" ></my:CtrlMatch>
 
     </Grid>
 </Window>

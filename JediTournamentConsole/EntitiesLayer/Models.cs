@@ -13,7 +13,11 @@ namespace EntitiesLayer
 
         //Model encapsulé dans le ViewModel
         private ObservableCollection<ViewModelJedi> _jedis;
-          
+
+        private ObservableCollection<ViewModelMatch> _matchs;
+
+        private ObservableCollection<ViewModelStade> _stades;
+
         public ObservableCollection<ViewModelJedi> Jedis
         {
             get { return _jedis; }
@@ -24,16 +28,62 @@ namespace EntitiesLayer
             }
         }
 
-        private ViewModelJedi _selectedItem;
-
-        public ViewModelJedi SelectedItem
+        public ObservableCollection<ViewModelMatch> Matchs
         {
-            get { return _selectedItem; }
+            get { return _matchs; }
+            private set
+            {
+                _matchs = value;
+                OnPropertyChanged("Matchs");
+            }
+        }
+
+        public ObservableCollection<ViewModelStade> Stades
+        {
+            get { return _stades; }
+            private set
+            {
+                _stades = value;
+                OnPropertyChanged("Stades");
+            }
+        }
+
+        private ViewModelJedi _selectedJedi;
+
+        public ViewModelJedi SelectedJedi
+        {
+            get { return _selectedJedi; }
             set
             {
                 Console.WriteLine("garné!");
-                _selectedItem = value;
-                OnPropertyChanged("SelectedItem");
+                _selectedJedi = value;
+                OnPropertyChanged("SelectedJedi");
+            }
+        }
+
+        private ViewModelStade _selectedStade;
+
+        public ViewModelStade SelectedStade
+        {
+            get { return _selectedStade; }
+            set
+            {
+                Console.WriteLine("garné!");
+                _selectedStade = value;
+                OnPropertyChanged("SelectedStade");
+            }
+        }
+
+        private ViewModelMatch _selectedMatch;
+
+        public ViewModelMatch SelectedMatch
+        {
+            get { return _selectedMatch; }
+            set
+            {
+                Console.WriteLine("garné!");
+                _selectedMatch = value;
+                OnPropertyChanged("SelectedMatch");
             }
         }
 
@@ -43,6 +93,24 @@ namespace EntitiesLayer
             foreach (EntitiesLayer.Jedi jed in jedisModel)
             {
                 _jedis.Add(new ViewModelJedi(jed));
+            }
+        }
+
+        public ViewModelEdit(List<EntitiesLayer.Match> matchModel)
+        {
+            _matchs = new ObservableCollection<ViewModelMatch>();
+            foreach (EntitiesLayer.Match mat in matchModel)
+            {
+                _matchs.Add(new ViewModelMatch(mat));
+            }
+        }
+
+        public ViewModelEdit(List<EntitiesLayer.Stade> stadesModel)
+        {
+            _stades = new ObservableCollection<ViewModelStade>();
+            foreach (EntitiesLayer.Stade sta in stadesModel)
+            {
+                _stades.Add(new ViewModelStade(sta));
             }
         }
     }
@@ -159,13 +227,20 @@ namespace EntitiesLayer
             get 
             { 
                 return match.Stade.Planete; }
-            set { match.Stade.Planete = value; }
+            set {
+                if (value == match.Stade.Planete) return;
+                match.Stade.Planete = value;
+                base.OnPropertyChanged("Planete");
+            }
         }
 
         public int NbPlaces
         {
             get { return match.Stade.NbPlaces; }
-            set { match.Stade.NbPlaces = value; }
+            set { if(match.Stade.NbPlaces == value) return;
+                match.Stade.NbPlaces = value;
+                base.OnPropertyChanged("Nbplaces");
+            }
         }
 
         public Jedi Jedi1
@@ -173,19 +248,28 @@ namespace EntitiesLayer
             get 
             { 
                 return match.Jedi1; }
-            set { match.Jedi1 = value; }
+            set { if (match.Jedi1 == value) return;
+                match.Jedi1 = value;
+                base.OnPropertyChanged("Jedi1");
+            }
         }
 
         public Jedi Jedi2
         {
             get { return match.Jedi2; }
-            set { match.Jedi2 = value; }
+            set { if (match.Jedi2 == value) return;
+                match.Jedi2 = value;
+                base.OnPropertyChanged("Jedi2");
+            }
         }
 
         public EPhaseTournoi PhaseTournoi
         {
             get { return match.PhaseTournoi; }
-            set { match.PhaseTournoi= value; }
+            set { if (match.PhaseTournoi== value) return;
+                match.PhaseTournoi = value;
+                base.OnPropertyChanged("PhaseTournoi");
+            }
         }
 
         public int Id
@@ -215,6 +299,7 @@ namespace EntitiesLayer
 
         }
     }
+
     public class ViewModelStade : ViewModelBase
     {
         private Stade stade;
@@ -229,7 +314,9 @@ namespace EntitiesLayer
             get { return stade.Caracteristiques.Where(c => c.Nom == "Force").First().Valeur; }
             set
             {
+                if (stade.Caracteristiques.Where(c => c.Nom == "Force").First().Valeur == value) return;
                 stade.Caracteristiques.Where(c => c.Nom == "Force").First().Valeur = value;
+                base.OnPropertyChanged("Force");
             }
         }
 
@@ -238,8 +325,9 @@ namespace EntitiesLayer
             get { return stade.Caracteristiques.Where(c => c.Nom == "Sante").First().Valeur; }
             set
             {
+                if (stade.Caracteristiques.Where(c => c.Nom == "Sante").First().Valeur == value) return;
                 stade.Caracteristiques.Where(c => c.Nom == "Sante").First().Valeur = value;
-
+                base.OnPropertyChanged("Sante");
             }
         }
 
@@ -248,7 +336,9 @@ namespace EntitiesLayer
             get { return stade.Caracteristiques.Where(c => c.Nom == "Chance").First().Valeur; }
             set
             {
+                if (stade.Caracteristiques.Where(c => c.Nom == "Chance").First().Valeur == value) return;
                 stade.Caracteristiques.Where(c => c.Nom == "Chance").First().Valeur = value;
+                base.OnPropertyChanged("Chance");
             }
         }
 
@@ -257,20 +347,30 @@ namespace EntitiesLayer
             get { return stade.Caracteristiques.Where(c => c.Nom == "Defense").First().Valeur; }
             set
             {
+                if (stade.Caracteristiques.Where(c => c.Nom == "Defense").First().Valeur == value) return;
                 stade.Caracteristiques.Where(c => c.Nom == "Defense").First().Valeur = value;
+                base.OnPropertyChanged("Defense");
             }
         }
 
         public string Planete
         {
             get { return stade.Planete; }
-            set { stade.Planete = value; }
+            set {
+                if (stade.Planete == value) return;
+                stade.Planete = value;
+                base.OnPropertyChanged("Planete");             
+                }
         }
 
         public int NbPlaces
         {
             get { return stade.NbPlaces; }
-            set { stade.NbPlaces = value; }
+            set {
+                if (stade.NbPlaces == value) return;
+                stade.NbPlaces = value;
+                base.OnPropertyChanged("NbPlaces");
+            }
         }
 
         public ViewModelStade(Stade stade)
