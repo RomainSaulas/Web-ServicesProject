@@ -32,12 +32,6 @@ namespace JediTournamentWPF
 
             
         }
-
-        private void ListView_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
-
         private void ComboItems_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             //List<Object> list;
@@ -50,18 +44,20 @@ namespace JediTournamentWPF
             ListItemsJedi.Visibility = System.Windows.Visibility.Collapsed;
             ListItemsStade.Visibility = System.Windows.Visibility.Collapsed;
             ListItemsMatch.Visibility = System.Windows.Visibility.Collapsed;
-            switch(choice[2]){
+            // récupération des Jedis
+            switch (choice[2]){
                 case "Stades": ListItemsStade.ItemsSource = manager.getAllStadeModel(); 
                     ListItemsStade.Visibility = System.Windows.Visibility.Visible; break;
-                case "Jedis": ListItemsJedi.ItemsSource = manager.getAllJediModel(); 
-                    ListItemsJedi.Visibility = System.Windows.Visibility.Visible; break;
+               
+                case "Jedis": /*ListItemsJedi.ItemsSource = manager.ListJediInfo();*/
+                    ListItemsJedi.Visibility = System.Windows.Visibility.Visible;
+                    EntitiesLayer.ViewModelEdit vmEdit = new EntitiesLayer.ViewModelEdit(manager.ListJediInfo());
+                    this.DataContext = vmEdit;
+                    break;
                 case "Matchs": ListItemsMatch.ItemsSource = manager.getAllMatchModel(); 
                     ListItemsMatch.Visibility = System.Windows.Visibility.Visible; break;
-
             }
-
-
-
         }
+
     }
 }
