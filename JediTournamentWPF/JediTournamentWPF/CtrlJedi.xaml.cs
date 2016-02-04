@@ -23,8 +23,6 @@ namespace JediTournamentWPF
         public CtrlJedi()
         {
             InitializeComponent();
-
         }
-
     }
 }

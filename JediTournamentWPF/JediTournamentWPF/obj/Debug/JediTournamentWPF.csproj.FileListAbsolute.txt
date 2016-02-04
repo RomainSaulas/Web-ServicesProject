@@ -128,7 +128,3 @@ C:\Users\Romain\Documents\Work\Web-ServicesProject\JediTournamentWPF\JediTournam
 C:\Users\Romain\Documents\Work\Web-ServicesProject\JediTournamentWPF\JediTournamentWPF\obj\Debug\JediTournamentWPF.g.resources
 C:\Users\Romain\Documents\Work\Web-ServicesProject\JediTournamentWPF\JediTournamentWPF\obj\Debug\JediTournamentWPF.Properties.Resources.resources
 C:\Users\Romain\Documents\Work\Web-ServicesProject\JediTournamentWPF\JediTournamentWPF\obj\Debug\JediTournamentWPF.csproj.GenerateResource.Cache
-C:\Users\Romain\Documents\Work\Web-ServicesProject\JediTournamentWPF\JediTournamentWPF\obj\Debug\CtrlJedi.baml
-C:\Users\Romain\Documents\Work\Web-ServicesProject\JediTournamentWPF\JediTournamentWPF\obj\Debug\CtrlJedi.g.cs
-C:\Users\Romain\Documents\Work\Web-ServicesProject\JediTournamentWPF\JediTournamentWPF\obj\Debug\GeneratedInternalTypeHelper.g.cs
-C:\Users\Romain\Documents\Work\Web-ServicesProject\JediTournamentWPF\JediTournamentWPF\obj\Debug\JediTournamentWPF_MarkupCompile.lref
