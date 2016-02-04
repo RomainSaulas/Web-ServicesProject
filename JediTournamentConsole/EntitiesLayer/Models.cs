@@ -11,6 +11,12 @@ namespace EntitiesLayer
     {
         private Jedi jedi;
 
+      public Jedi Jedi
+      {
+         get { return jedi;  }
+      }
+
+
         public int Force
         {
             get { return jedi.Carac.Where(c => c.Nom == "Force").First().Valeur; }
@@ -77,9 +83,12 @@ namespace EntitiesLayer
 
     public class ViewModelMatch : ViewModelBase
     {
-        private Match match;     
-        
-        public string Planete
+        private Match match;
+      public Match Match
+      {
+         get { return match; }
+      }
+      public string Planete
         {
             get 
             { 
@@ -138,7 +147,12 @@ namespace EntitiesLayer
     {
         private Stade stade;
 
-        public int Force
+      public Stade Stade
+      {
+         get { return stade; }
+      }
+
+      public int Force
         {
             get { return stade.Caracteristiques.Where(c => c.Nom == "Force").First().Valeur; }
             set

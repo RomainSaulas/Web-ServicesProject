@@ -46,3 +46,15 @@ H:\Documents\webService\JediTournamentConsole\JediTournamentConsole\bin\Debug\Bu
 H:\Documents\webService\JediTournamentConsole\JediTournamentConsole\bin\Debug\EntitiesLayer.pdb
 H:\Documents\webService\JediTournamentConsole\JediTournamentConsole\bin\Debug\StubDataAccessLayer.pdb
 H:\Documents\webService\JediTournamentConsole\JediTournamentConsole\obj\Debug\JediTournamentConsole.csprojResolveAssemblyReference.cache
+C:\Users\User\Dropbox\Web-ServicesProject\JediTournamentConsole\JediTournamentConsole\bin\Debug\JediTournamentConsole.exe.config
+C:\Users\User\Dropbox\Web-ServicesProject\JediTournamentConsole\JediTournamentConsole\bin\Debug\JediTournamentConsole.exe
+C:\Users\User\Dropbox\Web-ServicesProject\JediTournamentConsole\JediTournamentConsole\bin\Debug\JediTournamentConsole.pdb
+C:\Users\User\Dropbox\Web-ServicesProject\JediTournamentConsole\JediTournamentConsole\bin\Debug\BusinessLayer.dll
+C:\Users\User\Dropbox\Web-ServicesProject\JediTournamentConsole\JediTournamentConsole\bin\Debug\EntitiesLayer.dll
+C:\Users\User\Dropbox\Web-ServicesProject\JediTournamentConsole\JediTournamentConsole\bin\Debug\StubDataAccessLayer.dll
+C:\Users\User\Dropbox\Web-ServicesProject\JediTournamentConsole\JediTournamentConsole\bin\Debug\BusinessLayer.pdb
+C:\Users\User\Dropbox\Web-ServicesProject\JediTournamentConsole\JediTournamentConsole\bin\Debug\EntitiesLayer.pdb
+C:\Users\User\Dropbox\Web-ServicesProject\JediTournamentConsole\JediTournamentConsole\bin\Debug\StubDataAccessLayer.pdb
+C:\Users\User\Dropbox\Web-ServicesProject\JediTournamentConsole\JediTournamentConsole\obj\Debug\JediTournamentConsole.csprojResolveAssemblyReference.cache
+C:\Users\User\Dropbox\Web-ServicesProject\JediTournamentConsole\JediTournamentConsole\obj\Debug\JediTournamentConsole.exe
+C:\Users\User\Dropbox\Web-ServicesProject\JediTournamentConsole\JediTournamentConsole\obj\Debug\JediTournamentConsole.pdb

@@ -52,3 +52,12 @@ C:\Users\Romain\Documents\Work\Web-ServicesProject\JediTournamentConsole\Busines
 C:\Users\Romain\Documents\Work\Web-ServicesProject\JediTournamentConsole\BusinessLayer\obj\Debug\BusinessLayer.csprojResolveAssemblyReference.cache
 C:\Users\Romain\Documents\Work\Web-ServicesProject\JediTournamentConsole\BusinessLayer\obj\Debug\BusinessLayer.dll
 C:\Users\Romain\Documents\Work\Web-ServicesProject\JediTournamentConsole\BusinessLayer\obj\Debug\BusinessLayer.pdb
+C:\Users\User\Dropbox\Web-ServicesProject\JediTournamentConsole\BusinessLayer\bin\Debug\BusinessLayer.dll
+C:\Users\User\Dropbox\Web-ServicesProject\JediTournamentConsole\BusinessLayer\bin\Debug\BusinessLayer.pdb
+C:\Users\User\Dropbox\Web-ServicesProject\JediTournamentConsole\BusinessLayer\bin\Debug\EntitiesLayer.dll
+C:\Users\User\Dropbox\Web-ServicesProject\JediTournamentConsole\BusinessLayer\bin\Debug\StubDataAccessLayer.dll
+C:\Users\User\Dropbox\Web-ServicesProject\JediTournamentConsole\BusinessLayer\bin\Debug\EntitiesLayer.pdb
+C:\Users\User\Dropbox\Web-ServicesProject\JediTournamentConsole\BusinessLayer\bin\Debug\StubDataAccessLayer.pdb
+C:\Users\User\Dropbox\Web-ServicesProject\JediTournamentConsole\BusinessLayer\obj\Debug\BusinessLayer.csprojResolveAssemblyReference.cache
+C:\Users\User\Dropbox\Web-ServicesProject\JediTournamentConsole\BusinessLayer\obj\Debug\BusinessLayer.dll
+C:\Users\User\Dropbox\Web-ServicesProject\JediTournamentConsole\BusinessLayer\obj\Debug\BusinessLayer.pdb
