@@ -47,3 +47,10 @@ C:\Users\User\Dropbox\Web-ServicesProject\JediTournamentConsole\StubDataAccessLa
 C:\Users\User\Dropbox\Web-ServicesProject\JediTournamentConsole\StubDataAccessLayer\obj\Debug\StubDataAccessLayer.csprojResolveAssemblyReference.cache
 C:\Users\User\Dropbox\Web-ServicesProject\JediTournamentConsole\StubDataAccessLayer\obj\Debug\StubDataAccessLayer.dll
 C:\Users\User\Dropbox\Web-ServicesProject\JediTournamentConsole\StubDataAccessLayer\obj\Debug\StubDataAccessLayer.pdb
+C:\Users\Nicolas\Documents\GitHub\Web-ServicesProject\JediTournamentConsole\StubDataAccessLayer\bin\Debug\StubDataAccessLayer.dll
+C:\Users\Nicolas\Documents\GitHub\Web-ServicesProject\JediTournamentConsole\StubDataAccessLayer\bin\Debug\StubDataAccessLayer.pdb
+C:\Users\Nicolas\Documents\GitHub\Web-ServicesProject\JediTournamentConsole\StubDataAccessLayer\bin\Debug\EntitiesLayer.dll
+C:\Users\Nicolas\Documents\GitHub\Web-ServicesProject\JediTournamentConsole\StubDataAccessLayer\bin\Debug\EntitiesLayer.pdb
+C:\Users\Nicolas\Documents\GitHub\Web-ServicesProject\JediTournamentConsole\StubDataAccessLayer\obj\Debug\StubDataAccessLayer.csprojResolveAssemblyReference.cache
+C:\Users\Nicolas\Documents\GitHub\Web-ServicesProject\JediTournamentConsole\StubDataAccessLayer\obj\Debug\StubDataAccessLayer.dll
+C:\Users\Nicolas\Documents\GitHub\Web-ServicesProject\JediTournamentConsole\StubDataAccessLayer\obj\Debug\StubDataAccessLayer.pdb
