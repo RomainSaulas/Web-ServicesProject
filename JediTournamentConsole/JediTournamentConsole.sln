@@ -1,5 +1,10 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+<<<<<<< HEAD
+=======
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+>>>>>>> userControl
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JediTournamentConsole", "JediTournamentConsole\JediTournamentConsole.csproj", "{FEC4BB5A-AC42-46E6-B72B-62C707A5919F}"
 EndProject

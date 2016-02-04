@@ -10,10 +10,22 @@ namespace EntitiesLayer
 {
     public class ViewModelEdit : ViewModelBase
     {
+<<<<<<< HEAD
         //Model encapsulé dans le ViewModel
         private ObservableCollection<ViewModelJedi> _jedis;
           
         public ObservableCollection<ViewModelJedi> Jedis
+=======
+        private Jedi jedi;
+
+      public Jedi Jedi
+      {
+         get { return jedi;  }
+      }
+
+
+        public int Force
+>>>>>>> refs/remotes/origin/master
         {
             get { return _jedis; }
             private set
@@ -148,9 +160,12 @@ namespace EntitiesLayer
 
     public class ViewModelMatch : ViewModelBase
     {
-        private Match match;     
-        
-        public string Planete
+        private Match match;
+      public Match Match
+      {
+         get { return match; }
+      }
+      public string Planete
         {
             get 
             { 
@@ -183,6 +198,12 @@ namespace EntitiesLayer
             get { return match.PhaseTournoi; }
             set { match.PhaseTournoi= value; }
         }
+
+        public int Id
+        {
+            get { return match.Id; }
+            set { match.Id = value; }
+        }
         public ViewModelMatch(Match match)
         {
             this.match = match;
@@ -209,7 +230,12 @@ namespace EntitiesLayer
     {
         private Stade stade;
 
-        public int Force
+      public Stade Stade
+      {
+         get { return stade; }
+      }
+
+      public int Force
         {
             get { return stade.Caracteristiques.Where(c => c.Nom == "Force").First().Valeur; }
             set
