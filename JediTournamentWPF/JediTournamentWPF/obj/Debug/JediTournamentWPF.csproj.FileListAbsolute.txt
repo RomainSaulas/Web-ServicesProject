@@ -186,3 +186,9 @@ C:\Users\Nicolas\Documents\GitHub\Web-ServicesProject\JediTournamentWPF\JediTour
 >>>>>>> refs/remotes/origin/master
 C:\Users\Romain\Documents\Work\Web-ServicesProject\JediTournamentWPF\JediTournamentWPF\obj\Debug\Window2.g.cs
 C:\Users\Romain\Documents\Work\Web-ServicesProject\JediTournamentWPF\JediTournamentWPF\obj\Debug\Window2.baml
+C:\Users\User\Dropbox\Web-ServicesProject\JediTournamentWPF\JediTournamentWPF\obj\Debug\CtrlJedi.baml
+C:\Users\User\Dropbox\Web-ServicesProject\JediTournamentWPF\JediTournamentWPF\obj\Debug\CtrlJedi.g.cs
+C:\Users\User\Dropbox\Web-ServicesProject\JediTournamentWPF\JediTournamentWPF\obj\Debug\Window2.g.cs
+C:\Users\User\Dropbox\Web-ServicesProject\JediTournamentWPF\JediTournamentWPF\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\User\Dropbox\Web-ServicesProject\JediTournamentWPF\JediTournamentWPF\obj\Debug\JediTournamentWPF_MarkupCompile.lref
+C:\Users\User\Dropbox\Web-ServicesProject\JediTournamentWPF\JediTournamentWPF\obj\Debug\Window2.baml

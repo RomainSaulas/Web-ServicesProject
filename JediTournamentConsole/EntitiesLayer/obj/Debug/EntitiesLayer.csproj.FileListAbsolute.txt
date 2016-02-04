@@ -1,37 +1,5 @@
-c:\users\sidujardin\documents\visual studio 2013\Projects\JediTournamentConsole\EntitiesLayer\bin\Debug\EntitiesLayer.dll
-c:\users\sidujardin\documents\visual studio 2013\Projects\JediTournamentConsole\EntitiesLayer\bin\Debug\EntitiesLayer.pdb
-c:\users\sidujardin\documents\visual studio 2013\Projects\JediTournamentConsole\EntitiesLayer\obj\Debug\EntitiesLayer.dll
-c:\users\sidujardin\documents\visual studio 2013\Projects\JediTournamentConsole\EntitiesLayer\obj\Debug\EntitiesLayer.pdb
-C:\Users\Simon\Documents\Visual Studio 2015\Projects\Projects\JediTournamentConsole\EntitiesLayer\bin\Debug\EntitiesLayer.dll
-C:\Users\Simon\Documents\Visual Studio 2015\Projects\Projects\JediTournamentConsole\EntitiesLayer\bin\Debug\EntitiesLayer.pdb
-C:\Users\Simon\Documents\Visual Studio 2015\Projects\Projects\JediTournamentConsole\EntitiesLayer\obj\Debug\EntitiesLayer.dll
-C:\Users\Simon\Documents\Visual Studio 2015\Projects\Projects\JediTournamentConsole\EntitiesLayer\obj\Debug\EntitiesLayer.pdb
-C:\Users\sidujardin\Documents\Visual Studio 2012\JediTournamentConsole\EntitiesLayer\bin\Debug\EntitiesLayer.dll
-C:\Users\sidujardin\Documents\Visual Studio 2012\JediTournamentConsole\EntitiesLayer\bin\Debug\EntitiesLayer.pdb
-C:\Users\sidujardin\Documents\Visual Studio 2012\JediTournamentConsole\EntitiesLayer\obj\Debug\EntitiesLayer.dll
-C:\Users\sidujardin\Documents\Visual Studio 2012\JediTournamentConsole\EntitiesLayer\obj\Debug\EntitiesLayer.pdb
-H:\Documents\webService\JediTournamentConsole\EntitiesLayer\bin\Debug\EntitiesLayer.dll
-H:\Documents\webService\JediTournamentConsole\EntitiesLayer\bin\Debug\EntitiesLayer.pdb
-H:\Documents\webService\JediTournamentConsole\EntitiesLayer\obj\Debug\EntitiesLayer.csprojResolveAssemblyReference.cache
-H:\Documents\webService\JediTournamentConsole\EntitiesLayer\obj\Debug\EntitiesLayer.dll
-H:\Documents\webService\JediTournamentConsole\EntitiesLayer\obj\Debug\EntitiesLayer.pdb
-H:\Documents\ZZ2\ServiceWeb\Projet\JediTournamentConsole\EntitiesLayer\bin\Debug\EntitiesLayer.dll
-H:\Documents\ZZ2\ServiceWeb\Projet\JediTournamentConsole\EntitiesLayer\bin\Debug\EntitiesLayer.pdb
-H:\Documents\ZZ2\ServiceWeb\Projet\JediTournamentConsole\EntitiesLayer\obj\Debug\EntitiesLayer.csprojResolveAssemblyReference.cache
-H:\Documents\ZZ2\ServiceWeb\Projet\JediTournamentConsole\EntitiesLayer\obj\Debug\EntitiesLayer.dll
-H:\Documents\ZZ2\ServiceWeb\Projet\JediTournamentConsole\EntitiesLayer\obj\Debug\EntitiesLayer.pdb
-C:\Users\Romain\Documents\Work\Web-ServicesProject\JediTournamentConsole\EntitiesLayer\bin\Debug\EntitiesLayer.dll
-C:\Users\Romain\Documents\Work\Web-ServicesProject\JediTournamentConsole\EntitiesLayer\bin\Debug\EntitiesLayer.pdb
-C:\Users\Romain\Documents\Work\Web-ServicesProject\JediTournamentConsole\EntitiesLayer\obj\Debug\EntitiesLayer.csprojResolveAssemblyReference.cache
-C:\Users\Romain\Documents\Work\Web-ServicesProject\JediTournamentConsole\EntitiesLayer\obj\Debug\EntitiesLayer.dll
-C:\Users\Romain\Documents\Work\Web-ServicesProject\JediTournamentConsole\EntitiesLayer\obj\Debug\EntitiesLayer.pdb
 C:\Users\User\Dropbox\Web-ServicesProject\JediTournamentConsole\EntitiesLayer\bin\Debug\EntitiesLayer.dll
 C:\Users\User\Dropbox\Web-ServicesProject\JediTournamentConsole\EntitiesLayer\bin\Debug\EntitiesLayer.pdb
 C:\Users\User\Dropbox\Web-ServicesProject\JediTournamentConsole\EntitiesLayer\obj\Debug\EntitiesLayer.csprojResolveAssemblyReference.cache
 C:\Users\User\Dropbox\Web-ServicesProject\JediTournamentConsole\EntitiesLayer\obj\Debug\EntitiesLayer.dll
 C:\Users\User\Dropbox\Web-ServicesProject\JediTournamentConsole\EntitiesLayer\obj\Debug\EntitiesLayer.pdb
-C:\Users\Nicolas\Documents\GitHub\Web-ServicesProject\JediTournamentConsole\EntitiesLayer\bin\Debug\EntitiesLayer.dll
-C:\Users\Nicolas\Documents\GitHub\Web-ServicesProject\JediTournamentConsole\EntitiesLayer\bin\Debug\EntitiesLayer.pdb
-C:\Users\Nicolas\Documents\GitHub\Web-ServicesProject\JediTournamentConsole\EntitiesLayer\obj\Debug\EntitiesLayer.csprojResolveAssemblyReference.cache
-C:\Users\Nicolas\Documents\GitHub\Web-ServicesProject\JediTournamentConsole\EntitiesLayer\obj\Debug\EntitiesLayer.dll
-C:\Users\Nicolas\Documents\GitHub\Web-ServicesProject\JediTournamentConsole\EntitiesLayer\obj\Debug\EntitiesLayer.pdb
