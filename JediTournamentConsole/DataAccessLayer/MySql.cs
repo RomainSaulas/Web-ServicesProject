@@ -27,6 +27,9 @@ namespace DataAccessLayer
             {
                 String request2 = "SELECT C.id, C.definition, C.nom, C.ETypeCaracteristique, C.valeur FROM Caracteristiques C;";
                 SqlCommand sqlCommand2 = new SqlCommand(request2, sqlConnection2);
+                try
+                { 
+
                 sqlConnection2.Open();
 
                 SqlDataReader sqlDataReader2 = sqlCommand2.ExecuteReader();
@@ -43,8 +46,9 @@ namespace DataAccessLayer
                     { carac.Definition = EDefCaracteristique.Chance; }
                     if (sqlDataReader2["definition"].ToString() == EDefCaracteristique.Sante.ToString())
                     { carac.Definition = EDefCaracteristique.Sante; }
+                        carac.Id = int.Parse(sqlDataReader2["id"].ToString());
 
-                    carac.Nom = sqlDataReader2["nom"].ToString();
+                        carac.Nom = sqlDataReader2["nom"].ToString();
                     carac.Valeur = int.Parse(sqlDataReader2["valeur"].ToString());
 
                     if (sqlDataReader2["ETypeCaracteristique"].ToString() == ETypeCaracteristique.Jedi.ToString())
@@ -53,9 +57,21 @@ namespace DataAccessLayer
                     { carac.Type = ETypeCaracteristique.Stade; }
 
                     listcarac.Add(carac);
-
+                
                 }
-                sqlDataReader2.Close();
+                    sqlDataReader2.Close();
+                }
+                catch (Exception ex)
+                {
+                    // Affiche des erreurs
+                    Console.WriteLine(ex.Message);
+                }
+                finally
+                {
+                    // Fermeture de la connexion à la base de données
+                    //connexion.Close();
+                }
+                
                 sqlConnection2.Close();
             }
 
@@ -69,6 +85,8 @@ namespace DataAccessLayer
             {
                 String request = "SELECT id, nom, isSith FROM Jedi;";
                 SqlCommand sqlCommand = new SqlCommand(request, sqlConnection);
+            try
+                { 
                 sqlConnection.Open();
 
                 SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
@@ -83,7 +101,10 @@ namespace DataAccessLayer
 
                         String request2 = "SELECT C.id, C.definition, C.nom, C.ETypeCaracteristique, C.valeur FROM Jedi J, Caracteristiques C, CaraJedi CJ WHERE J.id=" + id + " AND J.id=JC.idj AND C.id=CJ.idc;";
                         SqlCommand sqlCommand2 = new SqlCommand(request2, sqlConnection2);
-                        sqlConnection2.Open();
+                     try
+                     {
+
+                            sqlConnection2.Open();
 
                         SqlDataReader sqlDataReader2 = sqlCommand2.ExecuteReader();
                         while (sqlDataReader2.Read())
@@ -108,6 +129,17 @@ namespace DataAccessLayer
                             { carac.Type = ETypeCaracteristique.Stade; }
 
                             listcarac.Add(carac);
+                        }
+                        }
+                        catch (Exception ex)
+                        {
+                            // Affiche des erreurs
+                            Console.WriteLine(ex.Message);
+                        }
+                        finally
+                        {
+                            // Fermeture de la connexion à la base de données
+                            //connexion.Close();
                         }
                         sqlConnection2.Close();
                     }
@@ -123,12 +155,17 @@ namespace DataAccessLayer
                     allJedis.Add(jedi);
                 }
                 sqlDataReader.Close();
-                /*SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(sqlCommand);
-                dataTables[(int)DTName.JEDIS].Clear();
-                sqlDataAdapter.Fill(dataTables[(int)DTName.JEDIS]);
-                sqlDataAdapter = new SqlDataAdapter(new SqlCommand("SELECT idjedi, idcarac FROM JediCarac;", sqlConnection));
-                dataTables[(int)DTName.JEDICARAC].Clear();
-                sqlDataAdapter.Fill(dataTables[(int)DTName.JEDICARAC]);*/
+                }
+                catch (Exception ex)
+                {
+                    // Affiche des erreurs
+                    Console.WriteLine(ex.Message);
+                }
+                finally
+                {
+                    // Fermeture de la connexion à la base de données
+                    //connexion.Close();
+                }
                 sqlConnection.Close();
             }
             return allJedis;
@@ -142,6 +179,8 @@ namespace DataAccessLayer
             {
                 String request = "SELECT id, NBplace, Planet FROM Stade;";
                 SqlCommand sqlCommand = new SqlCommand(request, sqlConnection);
+            try
+                { 
                 sqlConnection.Open();
 
                 SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
@@ -156,6 +195,8 @@ namespace DataAccessLayer
 
                         String request2 = "SELECT C.id, C.definition, C.nom, C.ETypeCaracteristique, C.valeur FROM Stade S, Caracteristiques C, CaraStade CS WHERE S.id=" + id + " AND S.id=CS.ids AND S.id=CS.idc;";
                         SqlCommand sqlCommand2 = new SqlCommand(request2, sqlConnection2);
+                     try
+                      {
                         sqlConnection2.Open();
 
                         SqlDataReader sqlDataReader2 = sqlCommand2.ExecuteReader();
@@ -183,7 +224,18 @@ namespace DataAccessLayer
                             listcarac.Add(carac);
 
                         }
-                        sqlConnection2.Close();
+                            }
+                            catch (Exception ex)
+                            {
+                                // Affiche des erreurs
+                                Console.WriteLine(ex.Message);
+                            }
+                            finally
+                            {
+                                // Fermeture de la connexion à la base de données
+                                //connexion.Close();
+                            }
+                            sqlConnection2.Close();
                     }
                     Stade stade = new Stade();
     
@@ -192,7 +244,17 @@ namespace DataAccessLayer
                     stade.Planete = sqlDataReader["Planet"].ToString();
                     allStades.Add(stade);
                 }
-
+                }
+                catch (Exception ex)
+                {
+                    // Affiche des erreurs
+                    Console.WriteLine(ex.Message);
+                }
+                finally
+                {
+                    // Fermeture de la connexion à la base de données
+                    //connexion.Close();
+                }
                 sqlConnection.Close();
             }
             return allStades;
@@ -208,6 +270,7 @@ namespace DataAccessLayer
             {
                 String request = "SELECT id, idJediVainqueur,idj1,idj2,ids, EPhaseTournoi FROM Match;";
                 SqlCommand sqlCommand = new SqlCommand(request, sqlConnection);
+              try { 
                 sqlConnection.Open();
                 SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
                 Match match = new Match();
@@ -236,6 +299,17 @@ namespace DataAccessLayer
                     allMatches.Add(match);
                 }
                 sqlDataReader.Close();
+                }
+                catch (Exception ex)
+                {
+                    // Affiche des erreurs
+                    Console.WriteLine(ex.Message);
+                }
+                finally
+                {
+                    // Fermeture de la connexion à la base de données
+                    //connexion.Close();
+                }
                 sqlConnection.Close();
             }
             return allMatches;
@@ -298,6 +372,7 @@ namespace DataAccessLayer
             String request1 = "UPDATE Caracteristiques SET definition= @Definition ,nom =@Nom,valeur =@Valeur, ETypeCaracteristique = @ETypeCaracteristique Where id = @IdCaracteristiques";
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
             {
+                try {
                 sqlConnection.Open();
                 /* Update dans la table Jedi */
                 SqlCommand updateCommand1 = new SqlCommand(request1, sqlConnection);
@@ -305,9 +380,22 @@ namespace DataAccessLayer
                 updateCommand1.Parameters.AddWithValue("@Nom", caracteristiques.Nom);
                 updateCommand1.Parameters.AddWithValue("@Definition", caracteristiques.Definition.ToString());
                 updateCommand1.Parameters.AddWithValue("@IdCaracteristiques", caracteristiques.Id);
+                updateCommand1.Parameters.AddWithValue("@ETypeCaracteristique", caracteristiques.Type.ToString());
 
-                updateCommand1.ExecuteNonQuery();
+                    updateCommand1.ExecuteNonQuery();
+                }
+                catch (Exception ex)
+                {
+                    // Affiche des erreurs
+                    Console.WriteLine(ex.Message);
+                }
+                finally
+                {
+                    // Fermeture de la connexion à la base de données
+                    //connexion.Close();
+                }
                 sqlConnection.Close();
+                
             }
             throw new NotImplementedException();
         }
@@ -316,6 +404,7 @@ namespace DataAccessLayer
             String request1 = "UPDATE Jedi SET nom = @Nom , isSith = @IsSith Where id = @IdJedi";
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
             {
+               try { 
                 sqlConnection.Open();
                 /* Update dans la table Jedi */
                 SqlCommand updateCommand1 = new SqlCommand(request1, sqlConnection);
@@ -334,6 +423,17 @@ namespace DataAccessLayer
                     // updateCommand2.Parameters.AddWithValue("@IdCaracteristique", (int)c.Id);
                     //updateCommand2.ExecuteNonQuery();
                 }
+                }
+                catch (Exception ex)
+                {
+                    // Affiche des erreurs
+                    Console.WriteLine(ex.Message);
+                }
+                finally
+                {
+                    // Fermeture de la connexion à la base de données
+                    //connexion.Close();
+                }
                 sqlConnection.Close();
             }
         }
@@ -342,9 +442,9 @@ namespace DataAccessLayer
         public void updateStades(Stade stade)
         {
             String request1 = "UPDATE Stade SET NbPlace=@NbPlace, Planet= @Planet Where id = @IdStade";
-            String request2 = "UPDATE CaraStade SET value=@Value Where ids = @IdStade and ids = @IdStade";
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
             {
+               try { 
                 sqlConnection.Open();
                 /* Update dans la table Jedi */
                 SqlCommand updateCommand1 = new SqlCommand(request1, sqlConnection);
@@ -357,6 +457,17 @@ namespace DataAccessLayer
                 {
                     updateCaracteristiques(c);
                 }
+                }
+                catch (Exception ex)
+                {
+                    // Affiche des erreurs
+                    Console.WriteLine(ex.Message);
+                }
+                finally
+                {
+                    // Fermeture de la connexion à la base de données
+                    //connexion.Close();
+                }
                 sqlConnection.Close();
             }
             throw new NotImplementedException();
@@ -367,6 +478,7 @@ namespace DataAccessLayer
             String request1 = "UPDATE Match SET idJediVainqueur=@idJediVainqueur, idj1=@idjedi1,=idj2@idjedi2,ids=@idstade, Where id = @IdMatch";
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
             {
+              try{
                 sqlConnection.Open();
                 /* Update dans la table Jedi */
                 SqlCommand updateCommand1 = new SqlCommand(request1, sqlConnection);
@@ -377,24 +489,35 @@ namespace DataAccessLayer
                 updateCommand1.Parameters.AddWithValue("@EPhaseTournoi", match.PhaseTournoi.ToString());
                 updateCommand1.Parameters.AddWithValue("@IdMatch", match.Id);
                 updateCommand1.ExecuteNonQuery();
+                }
+                catch (Exception ex)
+                {
+                    // Affiche des erreurs
+                    Console.WriteLine(ex.Message);
+                }
+                finally
+                {
+                    // Fermeture de la connexion à la base de données
+                    //connexion.Close();
+                }
                 sqlConnection.Close();
                 throw new NotImplementedException();
             }
 
         }
     
-        public void updateTournois(Tournoi tournoi )
+         public void updateTournois(Tournoi tournoi )
         {
             String request1 = "UPDATE Jedi SET  nom = @Nom Where id = @IdTournoi";
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
             {
                 sqlConnection.Open();
-                /* Update dans la table Jedi */
+                // Update dans la table Jedi 
                 SqlCommand updateCommand1 = new SqlCommand(request1, sqlConnection);
                 updateCommand1.Parameters.AddWithValue("@Nom", tournoi.Nom);
                 updateCommand1.Parameters.AddWithValue("@IdTournoi", tournoi.Id);
                 updateCommand1.ExecuteNonQuery();
-                /*Update dans la table JediCaracteristiques */
+                //Update dans la table JediCaracteristiques 
                 foreach (Match m in tournoi.Match)
                 {
 
@@ -405,6 +528,53 @@ namespace DataAccessLayer
             }
 
             throw new NotImplementedException();
+        }
+        public void addJedi(Jedi jedi)
+        {
+            String request1 = "INSERT INTO Jedi (nom,IsSith) VALUES (@Nom,@IsSith)";
+            String request2 = "INSERT INTO CaraJedi VALUES (@IdJedi,@IdCaracteristiques)";
+            Int32 Current_Id = 0;
+            using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+            {
+              try
+                { 
+                sqlConnection.Open();
+                /* Récupérer dans un premier temps la valeur courante du séquence */
+                SqlCommand sqlCommand = new SqlCommand("SELECT IDENT_CURRENT ('Jedi') AS Current_Identity", sqlConnection);
+                using (SqlDataReader sqlDataReader = sqlCommand.ExecuteReader())
+                {
+                    while (sqlDataReader.Read())
+                    {
+                        Current_Id = Int32.Parse(sqlDataReader["Current_Identity"].ToString());
+                    }
+                }
+                /* Insertion dans la table Jedi */
+                SqlCommand insertCommand1 = new SqlCommand(request1, sqlConnection);
+                insertCommand1.Parameters.AddWithValue("@NOM", jedi.Nom);
+                insertCommand1.Parameters.AddWithValue("@IsSith", jedi.IsSith);
+                insertCommand1.ExecuteNonQuery();
+                /* Insertion dans la table JediCaracteristiques */
+                foreach (Caracteristiques c in jedi.Carac)
+                {
+                    SqlCommand insertCommand2 = new SqlCommand(request2, sqlConnection);
+                    insertCommand2.Parameters.AddWithValue("@IdJedi", Current_Id + 1);
+                    insertCommand2.Parameters.AddWithValue("@Value", c.Valeur);
+                    insertCommand2.Parameters.AddWithValue("@IdCaracteristiques", (int)c.Definition);
+                    insertCommand2.ExecuteNonQuery();
+                }
+                }
+                catch (Exception ex)
+                {
+                    // Affiche des erreurs
+                    Console.WriteLine(ex.Message);
+                }
+                finally
+                {
+                    // Fermeture de la connexion à la base de données
+                    //connexion.Close();
+                }
+                sqlConnection.Close();
+            }
         }
     }
 }
