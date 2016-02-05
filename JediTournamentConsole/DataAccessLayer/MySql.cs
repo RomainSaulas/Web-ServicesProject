@@ -317,7 +317,7 @@ namespace DataAccessLayer
             throw new NotImplementedException();
         }
 
-        public List<Tournoi> getTournois()
+       /* public  List<Tournoi> getTournois()
         {
             List<Tournoi> allTournois = new List<Tournoi>();
             List<Match> allMatches = this.getMatches();
@@ -364,7 +364,7 @@ namespace DataAccessLayer
             }
             return allTournois;
             throw new NotImplementedException();
-        }
+        }*/
         // updatttte
         public void updateCaracteristiques(Caracteristiques caracteristiques)
         {
@@ -506,7 +506,7 @@ namespace DataAccessLayer
 
         }
     
-         public void updateTournois(Tournoi tournoi )
+       /*  public void updateTournois(Tournoi tournoi )
         {
             String request1 = "UPDATE Jedi SET  nom = @Nom Where id = @IdTournoi";
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
@@ -528,55 +528,11 @@ namespace DataAccessLayer
             }
 
             throw new NotImplementedException();
-        }
-        public void addJedi(Jedi jedi)
-        {
-            String request1 = "INSERT INTO Jedi (nom,IsSith) VALUES (@Nom,@IsSith)";
-            String request2 = "INSERT INTO CaraJedi VALUES (@IdJedi,@IdCaracteristiques)";
-            Int32 Current_Id = 0;
-            using (SqlConnection sqlConnection = new SqlConnection(connectionString))
-            {
-              try
-                { 
-                sqlConnection.Open();
-                /* Récupérer dans un premier temps la valeur courante du séquence */
-                SqlCommand sqlCommand = new SqlCommand("SELECT IDENT_CURRENT ('Jedi') AS Current_Identity", sqlConnection);
-                using (SqlDataReader sqlDataReader = sqlCommand.ExecuteReader())
-                {
-                    while (sqlDataReader.Read())
-                    {
-                        Current_Id = Int32.Parse(sqlDataReader["Current_Identity"].ToString());
-                    }
-                }
-                /* Insertion dans la table Jedi */
-                SqlCommand insertCommand1 = new SqlCommand(request1, sqlConnection);
-                insertCommand1.Parameters.AddWithValue("@NOM", jedi.Nom);
-                insertCommand1.Parameters.AddWithValue("@IsSith", jedi.IsSith);
-                insertCommand1.ExecuteNonQuery();
-                /* Insertion dans la table JediCaracteristiques */
-                foreach (Caracteristiques c in jedi.Carac)
-                {
-                    SqlCommand insertCommand2 = new SqlCommand(request2, sqlConnection);
-                    insertCommand2.Parameters.AddWithValue("@IdJedi", Current_Id + 1);
-                    insertCommand2.Parameters.AddWithValue("@Value", c.Valeur);
-                    insertCommand2.Parameters.AddWithValue("@IdCaracteristiques", (int)c.Definition);
-                    insertCommand2.ExecuteNonQuery();
-                }
-                }
-                catch (Exception ex)
-                {
-                    // Affiche des erreurs
-                    Console.WriteLine(ex.Message);
-                }
-                finally
-                {
-                    // Fermeture de la connexion à la base de données
-                    //connexion.Close();
-                }
-                sqlConnection.Close();
-            }
-        }
-    }
-}
+        }*/
+        
+      }
+ }
+    
+
         
          

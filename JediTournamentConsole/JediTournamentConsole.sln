@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntitiesLayer", "EntitiesLa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JediTournamentWPF", "..\JediTournamentWPF\JediTournamentWPF\JediTournamentWPF.csproj", "{2C22DC6F-B57C-41E7-BED8-640EB94BC9D8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{0087D6AF-1D37-45B6-8BB3-75E364A32DD6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{2C22DC6F-B57C-41E7-BED8-640EB94BC9D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C22DC6F-B57C-41E7-BED8-640EB94BC9D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C22DC6F-B57C-41E7-BED8-640EB94BC9D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0087D6AF-1D37-45B6-8BB3-75E364A32DD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0087D6AF-1D37-45B6-8BB3-75E364A32DD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0087D6AF-1D37-45B6-8BB3-75E364A32DD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0087D6AF-1D37-45B6-8BB3-75E364A32DD6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
